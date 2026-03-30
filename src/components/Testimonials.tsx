@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef, useCallback } from "react";
+import { motion, AnimatePresence, PanInfo } from "framer-motion";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
@@ -20,11 +20,33 @@ const testimonials = [
   },
 ];
 
+const swipeThreshold = 50;
+
 const Testimonials = () => {
   const [current, setCurrent] = useState(0);
+  const [direction, setDirection] = useState(0);
 
-  const prev = () => setCurrent((c) => (c === 0 ? testimonials.length - 1 : c - 1));
-  const next = () => setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1));
+  const paginate = useCallback((newDirection: number) => {
+    setDirection(newDirection);
+    setCurrent((c) => {
+      if (newDirection === 1) return c === testimonials.length - 1 ? 0 : c + 1;
+      return c === 0 ? testimonials.length - 1 : c - 1;
+    });
+  }, []);
+
+  const handleDragEnd = useCallback((_: any, info: PanInfo) => {
+    if (info.offset.x < -swipeThreshold) {
+      paginate(1);
+    } else if (info.offset.x > swipeThreshold) {
+      paginate(-1);
+    }
+  }, [paginate]);
+
+  const variants = {
+    enter: (dir: number) => ({ x: dir > 0 ? 200 : -200, opacity: 0 }),
+    center: { x: 0, opacity: 1 },
+    exit: (dir: number) => ({ x: dir > 0 ? -200 : 200, opacity: 0 }),
+  };
 
   return (
     <section id="temoignages" className="py-24 md:py-32">
@@ -48,15 +70,21 @@ const Testimonials = () => {
           Elles en parlent mieux que quiconque
         </motion.h2>
 
-        <div className="relative">
-          <AnimatePresence mode="wait">
+        <div className="relative overflow-hidden touch-pan-y">
+          <AnimatePresence mode="wait" custom={direction}>
             <motion.div
               key={current}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.3 }}
-              className="text-center px-4"
+              custom={direction}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{ duration: 0.25, ease: "easeInOut" }}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.3}
+              onDragEnd={handleDragEnd}
+              className="text-center px-4 cursor-grab active:cursor-grabbing select-none"
             >
               {/* Stars */}
               <div className="flex justify-center gap-1 mb-6">
@@ -78,14 +106,14 @@ const Testimonials = () => {
           {/* Nav buttons */}
           <div className="flex justify-center gap-4 mt-10">
             <button
-              onClick={prev}
+              onClick={() => paginate(-1)}
               className="p-3 rounded-full border border-border hover:bg-accent transition-colors duration-200"
               aria-label="Avis précédent"
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
             <button
-              onClick={next}
+              onClick={() => paginate(1)}
               className="p-3 rounded-full border border-border hover:bg-accent transition-colors duration-200"
               aria-label="Avis suivant"
             >
@@ -98,7 +126,10 @@ const Testimonials = () => {
             {testimonials.map((_, i) => (
               <button
                 key={i}
-                onClick={() => setCurrent(i)}
+                onClick={() => {
+                  setDirection(i > current ? 1 : -1);
+                  setCurrent(i);
+                }}
                 className={`w-2 h-2 rounded-full transition-all duration-200 ${
                   i === current ? "bg-primary w-6" : "bg-border"
                 }`}
@@ -106,6 +137,11 @@ const Testimonials = () => {
               />
             ))}
           </div>
+
+          {/* Swipe hint on mobile */}
+          <p className="text-center text-xs text-muted-foreground/60 mt-4 md:hidden">
+            ← Glissez pour naviguer →
+          </p>
         </div>
 
         <div className="text-center mt-10">
