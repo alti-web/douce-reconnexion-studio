@@ -42,26 +42,31 @@ const About = () => {
             </p>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Infirmière pendant plus de 10 ans, j'ai choisi de mettre mon expérience du soin
-                au service du massage. Un jour, lors d'une séance, j'ai pris conscience que
-                le toucher est un véritable langage : un moyen simple mais profond d'apaiser
-                le corps et de calmer le mental.
+                D'abord infirmière pendant plus de dix ans, j'ai exercé en hôpital, en libéral à Marseille, puis en laboratoire d'analyses médicales en Ardèche.
               </p>
               <p>
-                Depuis 2024, j'accueille les femmes dans mon espace à Saint-Privat,
-                près d'Aubenas, pour leur offrir un vrai moment de reconnexion à soi.
+                En 2022, en quête d'une approche plus respectueuse du contact humain et du bien-être dans mon travail, j'ai exercé en tant qu'auxiliaire de vie pendant 3 ans.
+              </p>
+              <p>
+                Lors d'un massage, j'ai pris conscience que depuis plusieurs années, à toujours être dans le "devoir faire", je m'étais totalement coupée de mes ressentis. Ce moment m'a permis de réaliser combien le toucher est un véritable langage : un moyen simple mais profond d'apaiser le corps, calmer le mental et d'apporter réconfort et reconnexion à soi.
+              </p>
+              <p>
+                Animée par l'envie d'accompagner les femmes de cette façon, j'ai suivi depuis fin 2023 une dizaine de formations certifiantes auprès de professionnel(le)s aussi expert(e)s que passionné(e)s.
+              </p>
+              <p>
+                Je vous accueille depuis juin 2024 dans mon espace bien-être pensé pour votre détente, au sein d'un local partagé, sur la commune de Saint-Privat (à quelques minutes d'Aubenas) en Ardèche.
               </p>
             </div>
 
             <blockquote className="mt-8 pl-6 border-l-2 border-primary italic text-foreground/80 font-display text-lg">
-              "Le toucher est un langage."
+              "Le massage est pour moi une autre manière de prendre soin et laisser s'exprimer ma sensibilité et mon empathie."
             </blockquote>
 
             <a
               href="#contact"
               className="inline-flex items-center gap-2 mt-8 text-sm font-medium text-primary hover:gap-3 transition-all duration-200"
             >
-              En savoir plus sur mon parcours
+              Me contacter
               <ArrowRight className="w-4 h-4" />
             </a>
           </motion.div>

@@ -1,23 +1,58 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { label: "Massages", href: "#massages" },
-  { label: "Témoignages", href: "#temoignages" },
-  { label: "À propos", href: "#a-propos" },
-  { label: "Contact", href: "#contact" },
+  { label: "Massages", href: "/massages" },
+  { label: "Déroulement", href: "/deroulement" },
+  { label: "Témoignages", href: "/#temoignages" },
+  { label: "À propos", href: "/#a-propos" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 100);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const handleNavClick = (href: string) => {
+    setMenuOpen(false);
+    // Handle hash links on home page
+    if (href.startsWith("/#") && isHome) {
+      const el = document.querySelector(href.replace("/", ""));
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const renderLink = (link: { label: string; href: string }, className: string) => {
+    if (link.href.startsWith("/") && !link.href.startsWith("/#")) {
+      return (
+        <Link key={link.href} to={link.href} className={className} onClick={() => setMenuOpen(false)}>
+          {link.label}
+        </Link>
+      );
+    }
+    if (link.href.startsWith("/#") && isHome) {
+      return (
+        <a key={link.href} href={link.href.replace("/", "")} className={className} onClick={() => handleNavClick(link.href)}>
+          {link.label}
+        </a>
+      );
+    }
+    return (
+      <Link key={link.href} to={link.href} className={className} onClick={() => setMenuOpen(false)}>
+        {link.label}
+      </Link>
+    );
+  };
 
   return (
     <motion.header
@@ -28,21 +63,15 @@ const Header = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-display text-lg md:text-xl tracking-tight text-foreground">
+        <Link to="/" className="font-display text-lg md:text-xl tracking-tight text-foreground">
           Fondamental Massage
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            renderLink(link, "text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200")
+          )}
           <a
             href="tel:0666428919"
             className="flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-medium shadow-soft hover:shadow-hover transition-all duration-200 hover:-translate-y-0.5 active:scale-95"
@@ -72,16 +101,9 @@ const Header = () => {
             className="md:hidden bg-background/95 backdrop-blur-md border-t border-border overflow-hidden"
           >
             <nav className="container py-6 flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="text-base text-foreground py-2"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {navLinks.map((link) =>
+                renderLink(link, "text-base text-foreground py-2")
+              )}
               <a
                 href="tel:0666428919"
                 className="flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full text-sm font-medium mt-2"

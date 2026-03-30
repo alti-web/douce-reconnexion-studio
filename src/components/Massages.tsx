@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const massages = [
   {
-    title: "Massage Relaxant Corps",
-    hook: "Un relâchement profond pour libérer le corps de ses tensions accumulées.",
-    duration: "60 min",
-    price: "65 €",
+    title: ""Je lâche-prise"",
+    hook: "Vivez bien plus qu'un simple moment de détente, une véritable reconnexion à soi.",
+    duration: "60 / 75 / 90 min",
+    price: "À partir de 60 €",
   },
   {
     title: "Massage Facial Japonais",
@@ -15,16 +16,16 @@ const massages = [
     price: "65 €",
   },
   {
-    title: "Massage Duo",
+    title: "Massages Duo",
     hook: "Partagez un moment de relaxation à deux, entre amies ou en couple.",
-    duration: "60 min",
-    price: "120 €",
+    duration: "60 / 75 / 90 min",
+    price: "À partir de 65 € / pers",
   },
   {
-    title: "Rituel Corps & Visage",
+    title: "Corps & Visage",
     hook: "L'expérience complète : un voyage sensoriel du visage jusqu'aux pieds.",
-    duration: "90 min",
-    price: "90 €",
+    duration: "1h30 à 2h",
+    price: "À partir de 85 €",
   },
 ];
 
@@ -39,7 +40,7 @@ const Massages = () => {
           transition={{ duration: 0.4 }}
           className="text-center text-sm font-medium tracking-widest uppercase text-muted-foreground mb-4"
         >
-          Les soins
+          Nos prestations
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 12 }}
@@ -73,13 +74,13 @@ const Massages = () => {
                   </span>
                   <span className="font-medium text-foreground">{massage.price}</span>
                 </div>
-                <a
-                  href="tel:0666428919"
+                <Link
+                  to="/massages"
                   className="flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-2.5 transition-all duration-200"
                 >
                   Découvrir
                   <ArrowRight className="w-4 h-4" />
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}
