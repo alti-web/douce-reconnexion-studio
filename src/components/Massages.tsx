@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const massages = [
   {
-    title: ""Je lâche-prise"",
+    title: "\u201CJe lâche-prise\u201D",
     hook: "Vivez bien plus qu'un simple moment de détente, une véritable reconnexion à soi.",
     duration: "60 / 75 / 90 min",
     price: "À partir de 60 €",
