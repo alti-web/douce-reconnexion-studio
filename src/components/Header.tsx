@@ -59,7 +59,7 @@ const Header = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-background/90 backdrop-blur-md shadow-soft"
-          : "bg-transparent"
+          : "bg-background/70 backdrop-blur-sm"
       }`}
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
