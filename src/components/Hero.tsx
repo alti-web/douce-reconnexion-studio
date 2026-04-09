@@ -24,7 +24,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-primary-foreground/80 text-sm md:text-base font-medium tracking-widest uppercase mb-6"
         >
-          Massage &amp; Bien-être féminin
+          Institut de massages pour femmes à Saint-Privat (Aubenas)
         </motion.p>
 
         <motion.h1
@@ -33,7 +33,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="font-display text-4xl md:text-6xl lg:text-7xl text-primary-foreground leading-[1.1] tracking-tight max-w-4xl mx-auto mb-6 text-balance"
         >
-          Votre parenthèse de lâcher-prise à Saint-Privat
+          Un espace propice au Lâcher-Prise
         </motion.h1>
 
         <motion.p
@@ -42,7 +42,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-primary-foreground/80 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed"
         >
-          Un espace de massage exclusivement féminin pour relâcher les tensions du corps et de l'esprit.
+          Pour les femmes en surcharge mentale et émotionnelle qui veulent vivre un relâchement profond.
         </motion.p>
 
         <motion.div
@@ -52,16 +52,16 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a
-            href="tel:0666428919"
+            href="#massages"
             className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium shadow-soft hover:shadow-hover transition-all duration-200 hover:-translate-y-0.5 active:scale-95"
           >
-            Réserver ma séance
+            Trouver mon massage
           </a>
           <a
-            href="#massages"
+            href="tel:0666428919"
             className="border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-full text-base font-medium hover:bg-primary-foreground/10 transition-all duration-200"
           >
-            Découvrir les soins
+            Je réserve mon moment détente
           </a>
         </motion.div>
       </div>
