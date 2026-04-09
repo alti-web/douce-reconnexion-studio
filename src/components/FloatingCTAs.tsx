@@ -30,7 +30,7 @@ const FloatingCTAs = () => {
         className="fixed left-0 top-1/2 -translate-y-1/2 z-40 flex items-center gap-2 bg-foreground text-background px-4 py-3 rounded-r-full text-xs font-medium shadow-soft hover:shadow-hover transition-shadow duration-300 writing-horizontal"
       >
         <CalendarCheck className="w-3.5 h-3.5" />
-        <span>Votre espace patient</span>
+        <span>Réserver en ligne</span>
       </motion.a>
     </>
   );

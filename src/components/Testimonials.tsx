@@ -5,17 +5,17 @@ import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     name: "Camille U.",
-    text: "Merci Élodie pour ce moment vraiment hors du temps. J'ai essayé pour la première fois le massage facial japonais dans son institut à Saint-Privat. C'est une expérience que je recommande fortement. 1h de pur plaisir. Ma peau est plus rebondie, mes traits détendus et mes petites ridules adoucies.",
+    text: "Merci Elodie pour ce moment vraiment hors du temps. J'ai essayé pour la première fois le massage facial japonais dans son institut à Saint-Privat à côté d'Aubenas. C'est une expérience que je recommande fortement. 1h de pur plaisir. Ma peau est plus rebondie, mes traits détendus et mes petites ridules adoucies. Vivement la prochaine séance. Merci encore ✨️🙏",
     stars: 5,
   },
   {
     name: "Clémence R.",
-    text: "Passer la porte du salon d'Élodie, c'est pénétrer dans une faille spatio-temporelle : on ne sait plus où on est, ni quelle heure il est ! Un massage avec Élodie c'est une expérience truffée de détails qui font toute la différence !",
+    text: "Passer la porte du salon d'Élodie, c'est pénétrer dans une faille spatio-temporelle : on ne sait plus où on est, ni quelle heure il est ! Et on accepte alors d'être transportée dans une profonde relaxation.. J'ai reçu en cadeau un massage corps d'une heure qui m'a vraiment fait lâcher prise et un soin visage d'une demi heure qui est venu parfaire ce moment de détente intense ! Un massage avec Élodie c'est une expérience truffée de détails qui font toute la différence !",
     stars: 5,
   },
   {
     name: "C Yu.",
-    text: "J'ai passé un merveilleux moment de lâcher prise entre les mains expertes d'Élodie. Elle est à l'écoute, bienveillante et d'une infinie douceur. Le massage est personnalisé dans une ambiance propice à la déconnexion et à la détente. Vous pouvez y aller les yeux fermés !",
+    text: "J'ai passé un merveilleux moment de lâcher prise entres les mains expertes d'Élodie. Elle est à l'écoute, bienveillante et d'une infinie douceur. Vous pouvez choisir en amont l'intensité du massage et les zones du corps à éviter ou au contraire, à favoriser. Le massage est personnalisé dans une ambiance propice à la déconnexion et à la détente. J'ai été tellement satisfaite que j'ai offert une séance de massage à une amie pour son anniversaire. Vous pouvez y aller les yeux fermés ! Personnellement, je sais que j'y retournerai dès que possible !",
     stars: 5,
   },
 ];
@@ -67,7 +67,7 @@ const Testimonials = () => {
           transition={{ duration: 0.4, delay: 0.1 }}
           className="text-center text-3xl md:text-4xl tracking-tight mb-16"
         >
-          Elles en parlent mieux que quiconque
+          Vous en parlez mieux que quiconque
         </motion.h2>
 
         <div className="relative overflow-hidden touch-pan-y">
