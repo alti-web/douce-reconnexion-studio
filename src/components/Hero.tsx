@@ -58,7 +58,9 @@ const Hero = () => {
             Trouver mon massage
           </a>
           <a
-            href="tel:0666428919"
+            href="https://www.fresha.com/fr/book-now/fondamental-massage-re4dn2mw/services?lid=2753315&eid=4859480&share=true&pId=2663592"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-full text-base font-medium hover:bg-primary-foreground/10 transition-all duration-200"
           >
             Je réserve mon moment détente

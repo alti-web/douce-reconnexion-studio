@@ -8,24 +8,28 @@ const massages = [
     hook: "Vivez bien plus qu'un simple moment de détente, une véritable reconnexion à soi.",
     duration: "60 / 75 / 90 min",
     price: "À partir de 60 €",
+    link: "/massages#massages-corps",
   },
   {
-    title: "Massage Facial Japonais",
-    hook: "Un soin d'exception pour le visage, alliant lifting naturel et profonde détente.",
-    duration: "60 min",
-    price: "65 €",
+    title: "Les massages visage",
+    hook: "Une source de détente insoupçonnée.",
+    duration: "30 / 45 / 60 min",
+    price: "À partir de 35 €",
+    link: "/massages#massages-visage",
   },
   {
     title: "Massages Duo",
     hook: "Partagez un moment de relaxation à deux, entre amies ou en couple.",
     duration: "60 / 75 / 90 min",
     price: "À partir de 65 € / pers",
+    link: "/massages#massages-duo",
   },
   {
     title: "Corps & Visage",
-    hook: "L'expérience complète : un voyage sensoriel du visage jusqu'aux pieds.",
+    hook: "Un voyage sensoriel complet pour vivre une véritable expérience bien-être.",
     duration: "1h30 à 2h",
     price: "À partir de 85 €",
+    link: "/massages#massages-corps-visage",
   },
 ];
 
@@ -75,7 +79,7 @@ const Massages = () => {
                   <span className="font-medium text-foreground">{massage.price}</span>
                 </div>
                 <Link
-                  to="/massages"
+                  to={massage.link}
                   className="flex items-center gap-1.5 text-sm font-medium text-primary hover:gap-2.5 transition-all duration-200"
                 >
                   Découvrir
