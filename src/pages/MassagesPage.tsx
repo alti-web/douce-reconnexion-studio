@@ -71,7 +71,10 @@ const MassagesPage = () => {
 
             {/* Abonnements */}
             <div className="mt-8 pt-6 border-t border-border">
-              <p className="text-sm font-medium mb-3">Ancrer votre rituel bien-être :</p>
+              <p className="text-sm font-medium mb-2">Ancrer votre rituel bien-être :</p>
+              <p className="text-muted-foreground text-xs leading-relaxed mb-3">
+                Engagez-vous sur un rythme régulier d'un massage par mois et bénéficiez d'un tarif préférentiel. L'abonnement vous garantit un créneau privilégié chaque mois.
+              </p>
               <div className="grid sm:grid-cols-2 gap-3">
                 <div className="bg-accent/40 rounded-xl p-4 text-sm">
                   <p className="font-medium">Abonnement 3 mois</p>
@@ -88,7 +91,7 @@ const MassagesPage = () => {
       </section>
 
       {/* Massages Spécifiques */}
-      <section className="py-20 md:py-28 bg-secondary/50">
+      <section id="massages-specifiques" className="py-20 md:py-28 bg-secondary/50">
         <div className="container max-w-4xl">
           <motion.div {...fadeIn} className="flex items-center gap-3 justify-center mb-4">
             <Heart className="w-5 h-5 text-primary" />
@@ -143,7 +146,7 @@ const MassagesPage = () => {
               <p className="text-sm font-medium text-primary mb-4">À partir de 16SA</p>
               <div className="space-y-3 text-muted-foreground text-sm leading-relaxed mb-6">
                 <p>
-                  La grossesse est un chamboulement dans la vie et le corps d'une femme et s'accompagne au fil des mois de fatigues, d'inconfort et de tensions.
+                  La grossesse est un chamboulement dans la vie et le corps d'une femme et s'accompagne au fil des mois de fatigue, d'inconfort et de tensions.
                 </p>
                 <p>
                   Ce massage vous offre un véritable moment de détente et de relâchement pour respirer, s'offrir un moment plein de douceur, enveloppant et bienveillant, en connexion avec votre bébé.
@@ -183,7 +186,7 @@ const MassagesPage = () => {
       </section>
 
       {/* Massages du Visage */}
-      <section className="py-20 md:py-28">
+      <section id="massages-visage" className="py-20 md:py-28">
         <div className="container max-w-4xl">
           <motion.h2 {...fadeIn} className="font-display text-3xl md:text-4xl tracking-tight mb-4 text-center">
             Massages du Visage
@@ -194,9 +197,8 @@ const MassagesPage = () => {
             {/* Doux Éclat */}
             <motion.div {...fadeIn} className="bg-card/60 backdrop-blur-sm rounded-[2rem] border border-border p-8">
               <h3 className="font-display text-xl tracking-tight mb-2">Doux Éclat</h3>
-              <p className="text-primary text-sm italic mb-4">Quand la détente se lit sur votre visage.</p>
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                Offrez-vous un moment de détente rapide grâce à ce massage qui détend votre visage et redonne de l'éclat naturel à la peau à l'aide de manœuvres manuelles et d'un GuaSha.
+                Une parenthèse de 30 minutes pour prendre une pause tout en ravivant l'éclat naturel de votre peau.
               </p>
               <div className="flex items-center gap-3 mb-6 text-sm">
                 <span className="flex items-center gap-1.5 text-muted-foreground"><Clock className="w-3.5 h-3.5" /> 30 min</span>
@@ -234,7 +236,7 @@ const MassagesPage = () => {
               <p className="text-primary text-sm italic mb-4">Quand la relaxation se lit sur votre visage.</p>
               <div className="space-y-2 text-muted-foreground text-sm leading-relaxed mb-4">
                 <p>
-                  Inspiré du Kobido, art traditionnel japonais, ce massage alterne gestes légers, rapides, profonds et lents pour détendre les muscles du visage et libérer les tensions accumulées. Peu à peu une vague de relaxation se diffuse dans tout le corps.
+                  Inspiré du Kobido, art traditionnel japonais, ce massage alterne gestes légers, rapides, profonds et lents pour détendre les muscles du visage et libérer les tensions accumulées. Peu à peu le visage se relâche et une vague de détente se diffuse dans tout le corps.
                 </p>
                 <p>
                   La peau est repulpée, les traits adoucis, le teint lumineux et le visage visiblement reposé.
@@ -254,7 +256,7 @@ const MassagesPage = () => {
       </section>
 
       {/* Massages Corps & Visage */}
-      <section className="py-20 md:py-28 bg-secondary/50">
+      <section id="massages-corps-visage" className="py-20 md:py-28 bg-secondary/50">
         <div className="container max-w-4xl">
           <motion.h2 {...fadeIn} className="font-display text-3xl md:text-4xl tracking-tight mb-4 text-center">
             Massages Corps & Visage
@@ -292,7 +294,7 @@ const MassagesPage = () => {
               </div>
               <div className="space-y-3 text-muted-foreground text-sm leading-relaxed mb-4">
                 <p>
-                  Le stress diminue, les tensions se dissipent et peu à peu le corps se sent en sécurité, en confiance, bercé par le rythme des mouvements enveloppants. Puis vient le visage... et tout bascule : grâce à des manœuvres manuelles et du GuaSha, les mâchoires se desserrent, le mental ralentit sa course, et un calme profond vous envahit, laissant place à une détente totale.
+                  Bercée par le rythme des mouvements enveloppants, le stress diminue, les tensions se dissipent et peu à peu le corps se sent en sécurité, en confiance. Puis vient le visage… et tout bascule : grâce à des manœuvres manuelles et du GuaSha, les mâchoires se desserrent, le mental ralentit sa course, et un calme profond vous envahit, laissant place à une détente totale.
                 </p>
               </div>
               <p className="text-primary text-sm italic mb-6">Vivez un moment suspendu de lâcher-prise.</p>
@@ -311,7 +313,7 @@ const MassagesPage = () => {
               <div className="space-y-3 text-muted-foreground text-sm leading-relaxed mb-4">
                 <p className="italic font-medium text-foreground/80">Un véritable rituel détente</p>
                 <p>
-                  Les gestes du massage corps vous enveloppent et vous bercent de réconfort, vous invitant à l'abandon. Puis sur le visage, la fluidité des mouvements précis, l'alternance entre douceur et profondeur vous transportent vers un L-P intense.
+                  Les gestes du massage corps vous enveloppent et vous bercent de réconfort, vous invitant à l'abandon. Puis sur le visage, la fluidité des mouvements précis, l'alternance entre douceur et profondeur vous transportent vers un lâcher-prise intense.
                 </p>
                 <p>
                   Vous ressortez profondément apaisée, le visage lumineux, repulpé, les traits adoucis avec une sensation d'apaisement, de légèreté et de bien-être du corps et de l'esprit.
@@ -327,7 +329,7 @@ const MassagesPage = () => {
       </section>
 
       {/* Massages Duo */}
-      <section className="py-20 md:py-28">
+      <section id="massages-duo" className="py-20 md:py-28">
         <div className="container max-w-4xl">
           <motion.h2 {...fadeIn} className="font-display text-3xl md:text-4xl tracking-tight mb-4 text-center">
             Massages Duo
@@ -335,18 +337,26 @@ const MassagesPage = () => {
           <motion.p {...fadeIn} className="text-center text-muted-foreground mb-4 max-w-xl mx-auto">
             Partagez une expérience bien-être relaxante en couple, entre amies ou en famille.
           </motion.p>
-          <motion.div {...fadeIn} className="flex items-center justify-center gap-2 text-sm text-primary font-medium mb-12">
-            <Phone className="w-4 h-4" />
-            Réservation uniquement par téléphone
+          <motion.div {...fadeIn} className="flex flex-col items-center gap-2 text-sm mb-12">
+            <div className="flex items-center gap-2 text-primary font-medium">
+              <Phone className="w-4 h-4" />
+              Réservation uniquement par téléphone
+            </div>
+            <p className="text-muted-foreground text-xs italic">Moyens de paiement en duo : espèces ou chèque</p>
           </motion.div>
 
           <div className="space-y-8">
             {/* Duo - Je LP */}
             <motion.div {...fadeIn} className="bg-card/60 backdrop-blur-sm rounded-[2rem] border border-border p-8 md:p-10">
               <h3 className="font-display text-xl tracking-tight mb-2">"Je lâche-prise" — Duo</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                Massage du corps de la tête jusqu'aux pieds. Il libère vos tensions grâce à diverses manœuvres enveloppantes aux rythmes et d'intensités variés.
-              </p>
+              <div className="space-y-3 text-muted-foreground text-sm leading-relaxed mb-6">
+                <p>
+                  Ce massage vous transporte vers l'apaisement et le lâcher-prise par des manœuvres enveloppantes, une variation de rythme et d'intensité.
+                </p>
+                <p>
+                  Peu à peu, vos tensions s'apaisent, vos épaules se relâchent, le stress diminue, votre respiration devient plus ample, le mental se met sur pause, vous vous abandonnez totalement à l'instant présent et au calme intérieur.
+                </p>
+              </div>
               <div className="space-y-2 mb-6">
                 <div className="flex justify-between items-center bg-accent/40 rounded-xl px-4 py-3 text-sm">
                   <span className="flex items-center gap-2"><Clock className="w-3.5 h-3.5 text-muted-foreground" /> 60 min</span>
@@ -370,7 +380,7 @@ const MassagesPage = () => {
             <motion.div {...fadeIn} className="bg-card/60 backdrop-blur-sm rounded-[2rem] border border-border p-8 md:p-10">
               <h3 className="font-display text-xl tracking-tight mb-2">Doux Éclat — Duo</h3>
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                Massage detox du visage alliant manœuvres manuelles et utilisation d'un GuaSha qui redonne éclat à votre peau.
+                Une parenthèse de 30 minutes pour prendre une pause tout en ravivant l'éclat naturel de votre peau.
               </p>
               <div className="flex items-center gap-3 mb-6 text-sm">
                 <span className="flex items-center gap-1.5 text-muted-foreground"><Clock className="w-3.5 h-3.5" /> 30 min</span>
@@ -384,9 +394,11 @@ const MassagesPage = () => {
             {/* Duo - Je LP & Doux Éclat */}
             <motion.div {...fadeIn} className="bg-card/60 backdrop-blur-sm rounded-[2rem] border border-border p-8 md:p-10">
               <h3 className="font-display text-xl tracking-tight mb-2">"Je lâche-prise" & Doux Éclat — Duo</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                Massage de 1h30 alliant corps et visage durant lequel 30 min seront dédiées au visage, réunissant manœuvres manuelles et utilisation d'un GuaSha pour redonner de l'éclat à votre peau.
-              </p>
+              <div className="space-y-3 text-muted-foreground text-sm leading-relaxed mb-4">
+                <p>
+                  Bercée par le rythme des mouvements enveloppants, le stress diminue, les tensions se dissipent et peu à peu le corps se sent en sécurité, en confiance. Puis vient le visage… et tout bascule : grâce à des manœuvres manuelles et du GuaSha, les mâchoires se desserrent, le mental ralentit sa course, et un calme profond vous envahit, laissant place à une détente totale.
+                </p>
+              </div>
               <div className="flex items-center gap-3 mb-6 text-sm">
                 <span className="flex items-center gap-1.5 text-muted-foreground"><Clock className="w-3.5 h-3.5" /> 90 min</span>
                 <span className="font-medium">90 € / personne</span>

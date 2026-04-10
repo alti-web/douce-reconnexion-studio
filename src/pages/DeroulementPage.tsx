@@ -14,12 +14,12 @@ const steps = [
   {
     icon: MessageCircle,
     title: "Échange avant la séance",
-    description: "Un temps d'écoute pour comprendre vos besoins, vos attentes, vos éventuelles zones de tension ou d'inconfort. Ce moment est inclus dans le tarif de votre séance.",
+    description: "Un temps d'écoute pour comprendre vos besoins, vos attentes, vos éventuelles zones de tension ou d'inconfort.",
   },
   {
     icon: Shirt,
-    title: "Installation et déshabillage",
-    description: "Vous vous installez à votre rythme dans l'intimité de l'espace. Le temps nécessaire pour vous préparer est compris dans votre rendez-vous.",
+    title: "Installation",
+    description: "Je sors de la pièce pour vous laisser l'intimité de vous changer et de vous installer confortablement.",
   },
   {
     icon: Sparkles,
@@ -28,18 +28,13 @@ const steps = [
   },
   {
     icon: Heart,
-    title: "Temps d'intégration",
-    description: "Après le massage, prenez le temps de revenir à vous en douceur. Ce moment pour reprendre vos esprits et intégrer l'expérience vécue fait partie de la séance.",
+    title: "Retour à soi & rhabillage",
+    description: "Après le massage, prenez le temps de revenir à vous en douceur, de vous rhabiller et de vous recoiffer si besoin. Un peigne, du shampoing sec et un attache-bracelet sont mis à votre disposition. Quand vous êtes prête, vous me faites revenir dans la salle.",
   },
   {
     icon: MessageCircle,
     title: "Échange après la séance",
-    description: "Un court moment pour partager vos ressentis et recevoir d'éventuels conseils. Ce temps d'échange est également inclus dans le tarif.",
-  },
-  {
-    icon: Shirt,
-    title: "Rhabillage",
-    description: "Vous vous rhabillez à votre rythme, dans le calme et l'intimité de l'espace. Ce temps est inclus dans votre rendez-vous.",
+    description: "La séance se termine par un échange sur vos ressentis, vos préférences ou points d'amélioration si besoin, ainsi que d'éventuels conseils, autour d'une boisson fraîche.",
   },
 ];
 
@@ -69,7 +64,7 @@ const DeroulementPage = () => {
               <h2 className="font-display text-xl tracking-tight">Tout est inclus dans le tarif</h2>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-lg mx-auto">
-              Le temps d'échange avant et après la séance, le temps de déshabillage et rhabillage, ainsi que le temps nécessaire pour reprendre vos esprits et vivre un temps d'intégration de l'expérience sont compris dans le prix de votre séance.
+              Le temps d'échange avant et après la séance, le temps de déshabillage et rhabillage, ainsi que le temps nécessaire pour reprendre vos esprits et vivre un temps d'intégration de l'expérience vécue.
             </p>
           </motion.div>
 
@@ -120,10 +115,6 @@ const DeroulementPage = () => {
                   <span className="text-primary mt-0.5">•</span>
                   <span>Par téléphone ou en ligne via le site de réservation</span>
                 </li>
-                <li className="flex gap-2">
-                  <span className="text-primary mt-0.5">•</span>
-                  <span>La réservation est gratuite, aucun acompte n'est demandé</span>
-                </li>
               </ul>
             </motion.div>
 
@@ -139,7 +130,7 @@ const DeroulementPage = () => {
                 </li>
                 <li className="flex gap-2">
                   <span className="text-primary mt-0.5">•</span>
-                  <span>En deçà de 48h, la séance est due</span>
+                  <span>En deçà de 48h, la séance ne pourra être ni annulée ni reportée</span>
                 </li>
               </ul>
             </motion.div>

@@ -6,19 +6,19 @@ const pillars = [
     icon: Sunset,
     title: "Couper du quotidien",
     description:
-      "Un espace cocon où le temps s'arrête. Vous laissez derrière vous la charge mentale, les obligations, le bruit du monde. Ici, il n'y a que vous.",
+      "Un espace où plus rien ne presse. Vous quittez le rythme effréné du quotidien, et laissez derrière vous la charge mentale, les obligations. Ici, vous êtes votre unique priorité.",
   },
   {
     icon: Hand,
     title: "Lâcher-prise",
     description:
-      "Chaque massage est pensé pour vous permettre de relâcher profondément les tensions du corps et de l'esprit. Pas de protocole figé : je m'adapte à ce dont vous avez besoin, à chaque séance.",
+      "Ici, rien à gérer, rien à réussir, seulement à vous laisser porter, ressentir et accueillir ce qui vient.",
   },
   {
     icon: Ear,
     title: "Écouter son corps",
     description:
-      "Dans notre quotidien, on oublie souvent de s'écouter. Le massage est une invitation à vous reconnecter à vos sensations, à accueillir ce que votre corps exprime.",
+      "Le corps garde souvent en silence ce que l'on ne perçoit même plus. Le massage est une invitation à vous reconnecter à vos sensations, à ce que votre corps souhaite exprimer.",
   },
 ];
 
@@ -27,13 +27,13 @@ const specificAccompaniments = [
     icon: Baby,
     title: "Vivre sa grossesse autrement",
     description:
-      "Un massage prénatal enveloppant, spécialement adapté aux femmes enceintes dès le 4ᵉ mois. Un moment de douceur pour soulager les tensions liées à la grossesse et se reconnecter à son corps en pleine transformation.",
+      "Un massage prénatal enveloppant, spécialement adapté aux femmes enceintes dès le 4ᵉ mois. Un moment de douceur pour soulager les tensions liées à la grossesse, accompagner son corps en pleine transformation et se relier à son bébé.",
   },
   {
     icon: HeartPulse,
     title: "Soutenir sa fertilité",
     description:
-      "Un massage doux et ciblé pour accompagner les femmes en parcours de conception, qu'il soit naturel ou médicalement assisté. Un soin pensé pour relâcher les tensions du ventre, apaiser le mental et créer un espace de reconnexion à soi.",
+      "Un massage spécifique pour accompagner les femmes en parcours de conception, qu'il soit naturel ou médicalement assisté. Il vous aide à revenir pleinement dans votre corps et accueillir votre projet de maternité avec plus de sérénité.",
   },
 ];
 
