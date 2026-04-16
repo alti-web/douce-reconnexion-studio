@@ -18,7 +18,7 @@ const FloatingCTAs = () => {
         Prendre RDV
       </motion.a>
 
-      {/* Left center: Votre espace patient */}
+      {/* Left center: Votre espace patient — hidden on mobile */}
       <motion.a
         href="https://www.fresha.com/fr/book-now/fondamental-massage-re4dn2mw/services?lid=2753315&eid=4859480&share=true&pId=2663592"
         target="_blank"
@@ -27,7 +27,7 @@ const FloatingCTAs = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.4, type: "spring", stiffness: 180 }}
         whileHover={{ x: 4 }}
-        className="fixed left-0 top-1/2 -translate-y-1/2 z-40 flex items-center gap-2 bg-foreground text-background px-4 py-3 rounded-r-full text-xs font-medium shadow-soft hover:shadow-hover transition-shadow duration-300 writing-horizontal"
+        className="hidden md:flex fixed left-0 top-1/2 -translate-y-1/2 z-40 items-center gap-2 bg-foreground text-background px-4 py-3 rounded-r-full text-xs font-medium shadow-soft hover:shadow-hover transition-shadow duration-300 writing-horizontal"
       >
         <CalendarCheck className="w-3.5 h-3.5" />
         <span>Réserver en ligne</span>

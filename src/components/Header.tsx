@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Déroulement", href: "/deroulement" },
   { label: "Témoignages", href: "/#temoignages" },
   { label: "À propos", href: "/#a-propos" },
+  { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -25,10 +26,15 @@ const Header = () => {
 
   const handleNavClick = (href: string) => {
     setMenuOpen(false);
-    // Handle hash links on home page
-    if (href.startsWith("/#") && isHome) {
-      const el = document.querySelector(href.replace("/", ""));
-      if (el) el.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("/#")) {
+      const hash = href.replace("/", "");
+      if (isHome) {
+        const el = document.querySelector(hash);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // Navigate to home, then scroll after page loads
+        window.location.href = href;
+      }
     }
   };
 
