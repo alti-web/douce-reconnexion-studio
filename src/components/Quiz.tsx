@@ -8,6 +8,12 @@ type Question = {
   options: { label: string; value: string }[];
 };
 
+type Result = {
+  title: string;
+  description: string;
+  link: string;
+};
+
 const questions: Question[] = [
   {
     question: "En ce moment, comment vous sentez-vous ?",
