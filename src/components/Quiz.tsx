@@ -10,104 +10,59 @@ type Question = {
 
 const questions: Question[] = [
   {
-    question: "De quoi avez-vous le plus besoin en ce moment ?",
+    question: "En ce moment, comment vous sentez-vous ?",
     options: [
-      { label: "Relâcher les tensions et me détendre profondément", value: "detente" },
-      { label: "Prendre soin de mon visage et me faire du bien", value: "visage" },
-      { label: "Les deux ! Corps et visage", value: "complet" },
+      { label: "Mon mental est très actif, j'ai du mal à ralentir", value: "visage" },
+      { label: "Je ressens des tensions et/ou de la fatigue", value: "corps" },
+      { label: "Un mélange des deux, mental chargé et corps tendu", value: "combine" },
     ],
   },
   {
-    question: "Combien de temps souhaitez-vous vous accorder ?",
+    question: "Pendant votre massage, vous auriez surtout envie de :",
     options: [
-      { label: "30 minutes — une parenthèse express", value: "30" },
-      { label: "1 heure — un vrai moment pour moi", value: "60" },
-      { label: "1h30 ou plus — une expérience complète", value: "90" },
-    ],
-  },
-  {
-    question: "Qu'est-ce qui compte le plus pour vous ?",
-    options: [
-      { label: "Un lâcher-prise total, ne plus penser à rien", value: "lacher-prise" },
-      { label: "Un résultat visible sur ma peau", value: "resultat" },
-      { label: "Vivre une expérience sensorielle unique", value: "experience" },
+      { label: "Faire taire mon mental pour mieux lâcher-prise", value: "visage" },
+      { label: "Me détendre et relâcher la pression du quotidien", value: "corps" },
+      { label: "Vivre une expérience qui me fera totalement décrocher", value: "combine" },
     ],
   },
 ];
 
-type Result = {
-  title: string;
-  description: string;
-  link: string;
-};
-
 function getResult(answers: string[]): Result {
-  // Corps uniquement
-  if (answers[0] === "detente") {
-    if (answers[1] === "30") {
-      return {
-        title: "\"Je lâche-prise\" — 60 min",
-        description: "Un massage enveloppant pour relâcher profondément les tensions du corps et du mental. Accordez-vous au minimum 1h pour un vrai lâcher-prise.",
-        link: "/massages#massages-corps",
-      };
-    }
-    return {
-      title: "\"Je lâche-prise\"",
-      description: "Un massage du corps personnalisé, aux manœuvres enveloppantes, pour vous offrir un relâchement profond et un véritable lâcher-prise.",
-      link: "/massages#massages-corps",
-    };
-  }
+  // Count occurrences
+  const visageCount = answers.filter((a) => a === "visage").length;
+  const corpsCount = answers.filter((a) => a === "corps").length;
+  const combineCount = answers.filter((a) => a === "combine").length;
 
-  // Visage uniquement
-  if (answers[0] === "visage") {
-    if (answers[1] === "30") {
-      return {
-        title: "Doux Éclat",
-        description: "Une parenthèse de 30 minutes pour prendre une pause tout en ravivant l'éclat naturel de votre peau.",
-        link: "/massages#massages-visage",
-      };
-    }
-    if (answers[2] === "resultat") {
-      return {
-        title: "Massage Facial Japonais",
-        description: "Inspiré du Kobido, ce massage alterne gestes précis et profonds pour repulper la peau, adoucir les traits et offrir un teint lumineux.",
-        link: "/massages#massages-visage",
-      };
-    }
+  // Majority or tie-breaking logic
+  if (combineCount >= 1 && combineCount >= visageCount && combineCount >= corpsCount) {
     return {
-      title: "Shinzu The Face",
-      description: "La baguette de Kansa glisse délicatement sur le visage pour un lâcher-prise profond et une sensation unique d'apaisement.",
-      link: "/massages#massages-visage",
-    };
-  }
-
-  // Corps & Visage
-  if (answers[0] === "complet") {
-    if (answers[2] === "experience") {
-      return {
-        title: "\"Je lâche-prise\" & Shinzu The Face",
-        description: "Un voyage sensoriel complet alliant massage corps enveloppant et la douceur unique de la baguette de Kansa sur le visage.",
-        link: "/massages#massages-corps-visage",
-      };
-    }
-    if (answers[2] === "resultat") {
-      return {
-        title: "\"Je lâche-prise\" & Facial Japonais",
-        description: "Un véritable rituel bien-être : massage corps pour le lâcher-prise, puis soin du visage pour un teint lumineux et des traits adoucis.",
-        link: "/massages#massages-corps-visage",
-      };
-    }
-    return {
-      title: "\"Je lâche-prise\" & Doux Éclat",
-      description: "Le meilleur des deux mondes : un massage corps profond suivi d'un soin visage express pour raviver votre éclat.",
+      title: "Combiné Corps & Visage",
+      description: "Une expérience sensorielle complète pour vivre un lâcher-prise total.",
       link: "/massages#massages-corps-visage",
     };
   }
 
+  if (visageCount > corpsCount) {
+    return {
+      title: "Massage Visage",
+      description: "Une porte d'entrée surprenante vers le lâcher-prise.",
+      link: "/massages#massages-visage",
+    };
+  }
+
+  if (corpsCount > visageCount) {
+    return {
+      title: "Massage Corps",
+      description: "1h15 conseillé : ce sont quelques minutes supplémentaires qui ouvrent davantage l'accès vers le lâcher-prise.",
+      link: "/massages#massages-corps",
+    };
+  }
+
+  // Perfect tie between visage and corps
   return {
-    title: "\"Je lâche-prise\"",
-    description: "Un massage entièrement adapté à vos besoins du moment. Élodie ajuste chaque geste pour que ce moment soit pleinement le vôtre.",
-    link: "/massages#massages-corps",
+    title: "Combiné Corps & Visage",
+    description: "Une expérience sensorielle complète pour vivre un lâcher-prise total.",
+    link: "/massages#massages-corps-visage",
   };
 }
 
