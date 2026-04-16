@@ -11,6 +11,17 @@ import FloatingCTAs from "@/components/FloatingCTAs";
 import Quiz from "@/components/Quiz";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(location.hash);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [location.hash]);
+
   return (
     <div className="min-h-screen">
       <Header />
