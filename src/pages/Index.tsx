@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Reassurance from "@/components/Reassurance";
@@ -11,6 +13,17 @@ import FloatingCTAs from "@/components/FloatingCTAs";
 import Quiz from "@/components/Quiz";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(location.hash);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [location.hash]);
+
   return (
     <div className="min-h-screen">
       <Header />
