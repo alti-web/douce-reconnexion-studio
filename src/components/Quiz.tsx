@@ -109,11 +109,18 @@ const Quiz = () => {
     }, 300);
   };
 
+  // Listen for custom event from Hero button
+  useState(() => {
+    const handleOpenQuiz = () => setIsOpen(true);
+    window.addEventListener('openQuiz', handleOpenQuiz);
+    return () => window.removeEventListener('openQuiz', handleOpenQuiz);
+  });
+
   const result = showResult ? getResult(answers) : null;
 
   return (
     <>
-      {/* Floating quiz trigger button */}
+      {/* Floating quiz trigger button - desktop only */}
       <motion.button
         onClick={() => setIsOpen(true)}
         initial={{ scale: 0, opacity: 0 }}
@@ -121,7 +128,7 @@ const Quiz = () => {
         transition={{ delay: 1.5, duration: 0.4, type: "spring", stiffness: 200 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="fixed bottom-[4.5rem] md:bottom-6 left-6 z-40 flex items-center gap-2 bg-accent text-foreground px-5 py-3 rounded-full text-sm font-medium shadow-soft hover:shadow-hover transition-shadow duration-300 border border-border"
+        className="fixed bottom-6 left-6 z-40 hidden lg:flex items-center gap-2 bg-accent text-foreground px-5 py-3 rounded-full text-sm font-medium shadow-soft hover:shadow-hover transition-shadow duration-300 border border-border"
       >
         <HelpCircle className="w-4 h-4 text-primary" />
         Quel massage pour moi ?
