@@ -53,7 +53,7 @@ const Hero = () => {
         >
           <a
             href="#massages"
-            className="bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium shadow-soft hover:shadow-hover transition-all duration-200 hover:-translate-y-0.5 active:scale-95"
+            className="hidden lg:flex bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium shadow-soft hover:shadow-hover transition-all duration-200 hover:-translate-y-0.5 active:scale-95"
           >
             Trouver mon massage
           </a>
@@ -61,7 +61,7 @@ const Hero = () => {
             href="https://www.fresha.com/fr/book-now/fondamental-massage-re4dn2mw/services?lid=2753315&eid=4859480&share=true&pId=2663592"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-full text-base font-medium hover:bg-primary-foreground/10 transition-all duration-200"
+            className="hidden lg:flex border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-full text-base font-medium hover:bg-primary-foreground/10 transition-all duration-200"
           >
             Je réserve mon moment détente
           </a>
