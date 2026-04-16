@@ -65,6 +65,16 @@ const Hero = () => {
           >
             Je réserve mon moment détente
           </a>
+          {/* Quiz button - mobile & tablet only */}
+          <button
+            onClick={() => {
+              const event = new CustomEvent('openQuiz');
+              window.dispatchEvent(event);
+            }}
+            className="lg:hidden border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-full text-base font-medium hover:bg-primary-foreground/10 transition-all duration-200"
+          >
+            Quel massage pour moi ?
+          </button>
         </motion.div>
       </div>
 
