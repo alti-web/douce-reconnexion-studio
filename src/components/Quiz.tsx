@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, Sparkles, X, HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -110,11 +110,11 @@ const Quiz = () => {
   };
 
   // Listen for custom event from Hero button
-  useState(() => {
+  useEffect(() => {
     const handleOpenQuiz = () => setIsOpen(true);
     window.addEventListener('openQuiz', handleOpenQuiz);
     return () => window.removeEventListener('openQuiz', handleOpenQuiz);
-  });
+  }, []);
 
   const result = showResult ? getResult(answers) : null;
 
