@@ -121,7 +121,7 @@ const Quiz = () => {
         transition={{ delay: 1.5, duration: 0.4, type: "spring", stiffness: 200 }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="fixed bottom-20 md:bottom-6 left-6 z-40 flex items-center gap-2 bg-accent text-foreground px-5 py-3 rounded-full text-sm font-medium shadow-soft hover:shadow-hover transition-shadow duration-300 border border-border"
+        className="fixed bottom-[4.5rem] md:bottom-6 left-6 z-40 flex items-center gap-2 bg-accent text-foreground px-5 py-3 rounded-full text-sm font-medium shadow-soft hover:shadow-hover transition-shadow duration-300 border border-border"
       >
         <HelpCircle className="w-4 h-4 text-primary" />
         Quel massage pour moi ?
