@@ -1,6 +1,19 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import elodiePortrait from "@/assets/elodie-portrait.jpg";
+import studio1 from "@/assets/studio-1.jpg";
+import studio2 from "@/assets/studio-2.jpg";
+import studio3 from "@/assets/studio-3.jpg";
+import studio4 from "@/assets/studio-4.jpg";
+import studio5 from "@/assets/studio-5.jpg";
+
+const studioPhotos = [
+  { src: studio1, alt: "Espace de massage chaleureux et apaisant" },
+  { src: studio2, alt: "Cabine de soin avec ambiance lumineuse douce" },
+  { src: studio3, alt: "Détail décoration de l'institut Fondamental Massage" },
+  { src: studio4, alt: "Coin détente du cabinet de massage à Saint-Privat" },
+  { src: studio5, alt: "Ambiance cocon de l'espace bien-être" },
+];
 
 const About = () => {
   return (
@@ -71,6 +84,46 @@ const About = () => {
             </a>
           </motion.div>
         </div>
+
+        {/* Galerie photos du studio */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-20 md:mt-24 max-w-6xl mx-auto"
+        >
+          <div className="text-center mb-10">
+            <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-3">
+              L'écrin
+            </p>
+            <h3 className="font-display text-2xl md:text-3xl tracking-tight">
+              Un cocon pensé pour votre détente
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+            {studioPhotos.map((photo, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.96 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
+                className={`relative overflow-hidden rounded-2xl shadow-soft group ${
+                  index === 0 ? "col-span-2 md:row-span-2 aspect-square md:aspect-auto" : "aspect-square"
+                }`}
+              >
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
