@@ -84,6 +84,46 @@ const About = () => {
             </a>
           </motion.div>
         </div>
+
+        {/* Galerie photos du studio */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-20 md:mt-24 max-w-6xl mx-auto"
+        >
+          <div className="text-center mb-10">
+            <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-3">
+              L'écrin
+            </p>
+            <h3 className="font-display text-2xl md:text-3xl tracking-tight">
+              Un cocon pensé pour votre détente
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+            {studioPhotos.map((photo, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.96 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
+                className={`relative overflow-hidden rounded-2xl shadow-soft group ${
+                  index === 0 ? "col-span-2 md:row-span-2 aspect-square md:aspect-auto" : "aspect-square"
+                }`}
+              >
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
