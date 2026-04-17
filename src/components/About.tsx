@@ -6,6 +6,9 @@ import studio2 from "@/assets/studio-2.jpg";
 import studio3 from "@/assets/studio-3.jpg";
 import studio4 from "@/assets/studio-4.jpg";
 import studio5 from "@/assets/studio-5.jpg";
+import studio6 from "@/assets/studio-6.jpg";
+import studio7 from "@/assets/studio-7.jpg";
+import studio8 from "@/assets/studio-8.jpg";
 
 const studioPhotos = [
   { src: studio1, alt: "Espace de massage chaleureux et apaisant" },
@@ -13,6 +16,9 @@ const studioPhotos = [
   { src: studio3, alt: "Détail décoration de l'institut Fondamental Massage" },
   { src: studio4, alt: "Coin détente du cabinet de massage à Saint-Privat" },
   { src: studio5, alt: "Ambiance cocon de l'espace bien-être" },
+  { src: studio6, alt: "Niche décorative avec statuette zen, bougies et plante verte" },
+  { src: studio7, alt: "Vue d'ensemble de la cabine de massage et son mobilier en bois" },
+  { src: studio8, alt: "Table de massage prête à accueillir, ambiance tamisée et guirlandes lumineuses" },
 ];
 
 const About = () => {
