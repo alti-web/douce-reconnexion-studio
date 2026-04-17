@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import heroImage from "@/assets/hero-studio.jpg";
+import heroImage from "@/assets/studio-3.jpg";
 
 const Hero = () => {
   return (

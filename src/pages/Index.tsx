@@ -6,6 +6,7 @@ import Reassurance from "@/components/Reassurance";
 import Massages from "@/components/Massages";
 import Testimonials from "@/components/Testimonials";
 import About from "@/components/About";
+import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -32,6 +33,7 @@ const Index = () => {
       <Massages />
       <Testimonials />
       <About />
+      <Gallery />
       <FAQ />
       <Contact />
       <Footer />
