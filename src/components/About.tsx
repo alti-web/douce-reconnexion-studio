@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import elodiePortrait from "@/assets/studio-1.jpg";
+import elodiePortrait from "@/assets/elodie-portrait.jpg";
 
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-soft">
               <img
                 src={elodiePortrait}
-                alt="Cabine de massage de Fondamental Massage à Saint-Privat : ambiance feutrée et lumière douce"
+                alt="Élodie Valdès, praticienne en bien-être féminin"
                 className="w-full h-full object-cover"
               />
             </div>
