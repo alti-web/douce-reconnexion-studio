@@ -1,6 +1,19 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import elodiePortrait from "@/assets/elodie-portrait.jpg";
+import studio1 from "@/assets/studio-1.jpg";
+import studio2 from "@/assets/studio-2.jpg";
+import studio3 from "@/assets/studio-3.jpg";
+import studio4 from "@/assets/studio-4.jpg";
+import studio5 from "@/assets/studio-5.jpg";
+
+const studioPhotos = [
+  { src: studio1, alt: "Espace de massage chaleureux et apaisant" },
+  { src: studio2, alt: "Cabine de soin avec ambiance lumineuse douce" },
+  { src: studio3, alt: "Détail décoration de l'institut Fondamental Massage" },
+  { src: studio4, alt: "Coin détente du cabinet de massage à Saint-Privat" },
+  { src: studio5, alt: "Ambiance cocon de l'espace bien-être" },
+];
 
 const About = () => {
   return (
