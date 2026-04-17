@@ -36,6 +36,26 @@ const faqs = [
     answer:
       "Idéalement, une à deux fois par mois, que ce soit pour le corps ou le visage. C'est dans cette logique que j'ai créé le rituel bien-être, qui propose un massage d'1h par mois sur 3 ou 6 mois, ainsi que des cures pour le visage. L'objectif est d'inscrire les bienfaits dans la durée tout en évitant que les tensions ne s'accumulent.\n\nAu-delà de ça, chaque personne a des besoins différents, et le bon rythme reste toujours très personnel.\n\nMon conseil : si le massage ne peut pas s'intégrer dans une routine régulière, notamment pour des raisons de budget, il peut être intéressant de privilégier un massage plus ponctuel, mais un peu plus long (1h15 voire 1h30).\n\nQuand le quotidien est chargé, le corps met parfois du temps à lâcher. Ces quelques minutes supplémentaires permettent de lui laisser le temps de ralentir, de s'autoriser à se détendre, et d'accéder plus facilement à un véritable lâcher-prise.\n\nParfois, un simple quart d'heure en plus suffit à faire toute la différence.",
   },
+  {
+    question: "Y a-t-il des contre-indications générales aux massages ?",
+    answer:
+      "Oui, certaines situations nécessitent de reporter la séance ou d'obtenir un avis médical au préalable : fièvre, infection en cours, maladie contagieuse, phlébite ou troubles circulatoires importants, problèmes cardiaques non stabilisés, cancer en cours de traitement (sans accord médical), plaies ouvertes ou lésions cutanées étendues, post-opératoire récent.\n\nEn cas de doute, n'hésitez pas à m'en parler avant la réservation : mon expérience d'infirmière me permet d'évaluer avec vous si le massage est adapté à votre situation.",
+  },
+  {
+    question: "Peut-on recevoir un massage pendant la grossesse ?",
+    answer:
+      "Oui, le massage prénatal est possible à partir de la 16ème semaine d'aménorrhée (16 SA), une fois le premier trimestre passé. Il est spécifiquement adapté aux femmes enceintes : installation confortable en position latérale, pressions douces, zones travaillées et huiles choisies en toute sécurité.\n\nIl est en revanche déconseillé en cas de grossesse à risque, de menace d'accouchement prématuré ou de complications. En cas de suivi médical particulier, demandez l'avis de votre sage-femme ou de votre médecin avant de réserver.",
+  },
+  {
+    question: "Et en cas de problème de santé particulier (hypertension, diabète, etc.) ?",
+    answer:
+      "La plupart des pathologies chroniques stabilisées (hypertension équilibrée, diabète, arthrose, fibromyalgie…) ne sont pas une contre-indication au massage, à condition d'adapter la séance. Mon parcours d'infirmière me permet d'écouter votre situation, d'ajuster les pressions, les positions et les zones travaillées.\n\nMerci de me signaler vos antécédents et traitements lors de la prise de rendez-vous ou à votre arrivée, afin que je puisse vous proposer un soin sécurisant et adapté.",
+  },
+  {
+    question: "Peut-on se faire masser après une opération ou une blessure récente ?",
+    answer:
+      "Pas immédiatement. Il est nécessaire d'attendre la cicatrisation complète et l'accord de votre médecin ou chirurgien avant d'envisager un massage, en particulier sur la zone concernée. Les délais varient selon le type d'intervention.\n\nEn cas de blessure récente (entorse, contusion, déchirure musculaire), mieux vaut laisser passer la phase inflammatoire aiguë. Contactez-moi pour en discuter : nous trouverons ensemble le bon moment et le soin le plus adapté.",
+  },
 ];
 
 const FAQ = () => {
