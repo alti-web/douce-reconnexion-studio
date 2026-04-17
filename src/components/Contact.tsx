@@ -108,10 +108,12 @@ const Contact = () => {
                 Réserver ma séance
               </a>
               <a
-                href="tel:0666428919"
+                href="https://www.fresha.com/fr/book-now/fondamental-massage-re4dn2mw/services?lid=2753315&eid=4859480&share=true&pId=2663592"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 border border-border text-foreground px-8 py-4 rounded-full text-sm font-medium hover:bg-accent transition-all duration-200"
               >
-                Me contacter
+                Réserver en ligne
               </a>
             </div>
           </motion.div>
