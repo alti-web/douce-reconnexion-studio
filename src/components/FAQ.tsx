@@ -49,12 +49,12 @@ const faqs = [
   {
     question: "Et en cas de problème de santé particulier (hypertension, diabète, etc.) ?",
     answer:
-      "La plupart des pathologies chroniques stabilisées (hypertension équilibrée, diabète, arthrose, fibromyalgie…) ne sont pas une contre-indication au massage, à condition d'adapter la séance. Mon parcours d'infirmière me permet d'écouter votre situation, d'ajuster les pressions, les positions et les zones travaillées.\n\nMerci de me signaler vos antécédents et traitements lors de la prise de rendez-vous ou à votre arrivée, afin que je puisse vous proposer un soin sécurisant et adapté.",
+      "La plupart des pathologies chroniques stabilisées (hypertension équilibrée, diabète, arthrose, fibromyalgie…) ne sont pas une contre-indication au massage, à condition d'adapter la séance. Mon parcours d'infirmière me permet d'écouter votre situation, d'ajuster les pressions, les positions et les zones travaillées.\n\nMon expérience reste celle d'une praticienne en bien-être : je ne connais pas toutes les pathologies, ni votre dossier médical. En cas de doute, l'avis de votre médecin prime toujours sur le mien : merci de le solliciter avant toute prise de rendez-vous.\n\nMerci également de me signaler vos antécédents et traitements lors de la réservation ou à votre arrivée, afin que je puisse vous proposer un soin sécurisant et adapté.",
   },
   {
     question: "Peut-on se faire masser après une opération ou une blessure récente ?",
     answer:
-      "Pas immédiatement. Il est nécessaire d'attendre la cicatrisation complète et l'accord de votre médecin ou chirurgien avant d'envisager un massage, en particulier sur la zone concernée. Les délais varient selon le type d'intervention.\n\nEn cas de blessure récente (entorse, contusion, déchirure musculaire), mieux vaut laisser passer la phase inflammatoire aiguë. Contactez-moi pour en discuter : nous trouverons ensemble le bon moment et le soin le plus adapté.",
+      "Pas immédiatement. Il est nécessaire d'attendre la cicatrisation complète et l'accord de votre médecin ou chirurgien avant d'envisager un massage, en particulier sur la zone concernée. Les délais varient selon le type d'intervention.\n\nEn cas de blessure récente (entorse, contusion, déchirure musculaire), mieux vaut laisser passer la phase inflammatoire aiguë.\n\nDans tous les cas, en cas de doute, demandez l'avis de votre médecin avant de réserver : son avis prime toujours sur le mien. Vous pouvez ensuite me contacter pour que nous trouvions ensemble le bon moment et le soin le plus adapté.",
   },
 ];
 
