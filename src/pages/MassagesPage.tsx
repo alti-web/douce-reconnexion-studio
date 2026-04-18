@@ -155,10 +155,6 @@ const MassagesPage = () => {
 
               <div className="space-y-2 mb-6">
                 <div className="flex justify-between items-center bg-accent/40 rounded-xl px-4 py-2.5 text-sm">
-                  <span className="text-muted-foreground">Focus Dos (chaise de massage)</span>
-                  <span className="font-medium">30 min — 35 €</span>
-                </div>
-                <div className="flex justify-between items-center bg-accent/40 rounded-xl px-4 py-2.5 text-sm">
                   <span className="text-muted-foreground">Corps entier</span>
                   <span className="font-medium">60 min — 65 €</span>
                 </div>
