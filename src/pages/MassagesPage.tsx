@@ -422,7 +422,7 @@ const MassagesPage = () => {
           </motion.p>
           <motion.a
             {...fadeIn}
-            href="https://fondamental-massage.sumupstore.com/"
+            href="https://www.fresha.com/book-now/fondamental-massage-re4dn2mw/gift-cards?share=true&pId=2663592"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium shadow-soft hover:shadow-hover transition-all duration-200 hover:-translate-y-0.5 active:scale-95"
