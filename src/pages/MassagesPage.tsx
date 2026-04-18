@@ -73,7 +73,7 @@ const MassagesPage = () => {
             <div className="mt-8 pt-6 border-t border-border">
               <p className="text-sm font-medium mb-2">Ancrer votre rituel bien-être :</p>
               <p className="text-muted-foreground text-xs leading-relaxed mb-3">
-                Engagez-vous sur un rythme régulier d'un massage par mois et bénéficiez d'un tarif préférentiel. L'abonnement vous garantit un créneau privilégié chaque mois.
+                Engagez-vous sur un rythme régulier d'un massage par mois et bénéficiez d'un tarif préférentiel.
               </p>
               <div className="grid sm:grid-cols-2 gap-3">
                 <div className="bg-accent/40 rounded-xl p-4 text-sm">
