@@ -1,3 +1,14 @@
+export type BlogBlock =
+  | { type: "paragraph"; text: string }
+  | { type: "heading"; text: string }
+  | { type: "quote"; text: string; author?: string }
+  | {
+      type: "table";
+      caption?: string;
+      headers: string[];
+      rows: string[][];
+    };
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -5,53 +16,248 @@ export type BlogPost = {
   category: "Bien-être" | "Grossesse & post-partum" | "Témoignages";
   date: string; // ISO
   readingMinutes: number;
-  content: string[]; // paragraphes
+  content: BlogBlock[];
 };
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "rituel-auto-massage-visage",
-    title: "Un rituel d'auto-massage du visage en 5 minutes",
+    slug: "ce-que-mes-mains-ont-appris",
+    title: "Ce que mes mains ont appris que ma tête ignorait",
     excerpt:
-      "Quelques gestes simples pour relâcher les tensions, raviver l'éclat et offrir à votre peau un moment de douceur, matin ou soir.",
+      "En passant de l'hôpital à la table de massage, j'ai redécouvert le toucher autrement. Retour sur ce que mes mains m'ont enseigné, loin des protocoles.",
     category: "Bien-être",
-    date: "2025-04-10",
+    date: "2025-04-14",
+    readingMinutes: 5,
+    content: [
+      {
+        type: "paragraph",
+        text: "Quand j'étais infirmière, mes mains avaient un rôle clair : poser, soigner, surveiller. Elles étaient l'outil d'un protocole. Aujourd'hui, à l'institut, elles font autre chose. Elles écoutent. Et c'est sans doute le plus grand apprentissage de ma reconversion : il a fallu que je désapprenne pour réapprendre.",
+      },
+      {
+        type: "quote",
+        text: "Le toucher n'est pas un geste, c'est une présence.",
+      },
+      {
+        type: "paragraph",
+        text: "Cette phrase, je me la répète souvent en début de séance. Parce qu'avant de masser, il faut accueillir. Sentir si une épaule se rétracte, si une respiration se suspend, si une zone se ferme. Mes mains me disent ces choses bien avant que la cliente ne les exprime — souvent même, avant qu'elle n'en ait conscience.",
+      },
+      {
+        type: "heading",
+        text: "Deux univers, deux façons de toucher",
+      },
+      {
+        type: "paragraph",
+        text: "Pour mieux comprendre ce changement, j'ai pris le temps de poser noir sur blanc ce qui distingue le toucher soignant que je pratiquais à l'hôpital, et le toucher du bien-être que j'offre aujourd'hui.",
+      },
+      {
+        type: "table",
+        caption: "Ce qui a changé entre l'hôpital et l'institut",
+        headers: ["Critère", "Soin infirmier", "Massage bien-être"],
+        rows: [
+          ["Intention", "Réparer, surveiller", "Accueillir, relâcher"],
+          ["Rythme", "Efficace, rapide", "Lent, ample"],
+          ["Posture", "Faire pour", "Être avec"],
+          ["Réussite", "Geste technique juste", "Cliente qui lâche prise"],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Cette semaine, une cliente m'a dit en se relevant : « Je ne savais pas que mon dos pouvait être aussi silencieux. » Cette phrase m'a touchée. Parce qu'elle dit tout : le corps a sa propre parole, et nos mains peuvent l'aider à la déposer.",
+      },
+      {
+        type: "quote",
+        text: "Mon ancien métier m'a appris la rigueur. Mon nouveau métier m'apprend la lenteur.",
+        author: "Note d'un carnet de séance",
+      },
+      {
+        type: "paragraph",
+        text: "Si je devais résumer ce que mes mains ont appris cette année, je dirais ceci : elles ont appris à ne plus avoir peur du silence. À ne plus combler. À faire confiance à ce qui se passe quand on cesse d'agir pour simplement être présent. C'est, je crois, ce que je peux offrir de plus juste à celles qui poussent ma porte.",
+      },
+    ],
+  },
+  {
+    slug: "rituel-auto-massage-visage",
+    title: "Mon rituel d'auto-massage du visage, en 5 minutes chrono",
+    excerpt:
+      "Je vous partage les gestes simples que je pratique chaque matin pour relâcher les tensions du visage et offrir à ma peau un vrai moment de douceur.",
+    category: "Bien-être",
+    date: "2025-04-07",
     readingMinutes: 4,
     content: [
-      "Le visage est l'une des zones où nous accumulons le plus de tensions, souvent sans nous en rendre compte : mâchoires serrées, sourcils froncés devant un écran, contractions au niveau du front. Quelques minutes d'auto-massage suffisent à dénouer ces zones et à offrir un moment de pause à votre peau.",
-      "Commencez par vous installer confortablement, dos droit, épaules relâchées. Déposez quelques gouttes d'huile végétale (jojoba, amande douce ou noyau d'abricot) au creux de vos mains, frottez-les pour les réchauffer puis venez les poser sur l'ensemble du visage en respirant profondément.",
-      "Avec la pulpe des doigts, effectuez de petits cercles lents au niveau des tempes, puis remontez doucement vers le cuir chevelu. Descendez ensuite le long de la mâchoire en pinçant légèrement, du menton jusqu'aux oreilles. Ce geste libère les tensions accumulées dans cette zone très sollicitée.",
-      "Terminez par des lissages doux du centre du visage vers l'extérieur, comme pour repasser délicatement les traits. Quelques respirations profondes pour clore le rituel, et le tour est joué. À pratiquer le matin pour réveiller la peau, ou le soir pour favoriser la détente avant le coucher.",
+      {
+        type: "paragraph",
+        text: "Je l'avoue : pendant longtemps, je négligeais mon propre visage. Je passais mes journées à prendre soin du corps des autres, et le soir, je me contentais d'un démaquillage rapide. Puis un matin, en me regardant dans le miroir, j'ai vu une mâchoire serrée, un front plissé, une fatigue installée. C'est ce jour-là que j'ai créé mon petit rituel.",
+      },
+      {
+        type: "quote",
+        text: "Prendre soin de son visage, c'est apprendre à se regarder avec douceur.",
+      },
+      {
+        type: "heading",
+        text: "Les 5 minutes que je m'offre, chaque matin",
+      },
+      {
+        type: "paragraph",
+        text: "Je commence toujours par chauffer quelques gouttes d'huile végétale entre mes paumes, puis je les pose sur l'ensemble du visage en respirant trois fois profondément. Ce n'est qu'après ce temps de pause que les gestes commencent.",
+      },
+      {
+        type: "table",
+        caption: "Mon protocole, étape par étape",
+        headers: ["Étape", "Geste", "Durée"],
+        rows: [
+          ["1", "Pose des mains et 3 respirations", "30 s"],
+          ["2", "Petits cercles aux tempes", "1 min"],
+          ["3", "Pincements le long de la mâchoire", "1 min"],
+          ["4", "Lissages du centre vers l'extérieur", "1 min 30"],
+          ["5", "Pression douce des sourcils au cuir chevelu", "1 min"],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Ce qui m'a surprise, c'est l'effet sur ma journée entière. Une mâchoire détendue le matin, c'est moins de tensions au cou en fin d'après-midi. Un visage à qui l'on a parlé doucement, c'est un regard différent dans le miroir.",
+      },
+      {
+        type: "quote",
+        text: "Le visage est le seul endroit du corps où l'on porte, à vue, ce que l'on tait.",
+        author: "Une cliente, après une séance Kobido",
+      },
+      {
+        type: "paragraph",
+        text: "Si vous voulez essayer, mon seul conseil : ne cherchez pas à bien faire. Cherchez à bien sentir. Vos mains savent. Elles ont juste besoin que vous leur laissiez la place.",
+      },
     ],
   },
   {
     slug: "massage-femme-enceinte-bienfaits",
-    title: "Le massage pendant la grossesse : pourquoi, à partir de quand ?",
+    title: "Accompagner une femme enceinte : ce que j'ai compris en chemin",
     excerpt:
-      "Accompagner les transformations du corps avec douceur, soulager les tensions et créer un moment de connexion avec bébé. Tout savoir sur le massage femme enceinte.",
+      "À partir de quand, pourquoi, comment ? Je vous partage ma façon d'aborder le massage prénatal, héritée de mon parcours d'infirmière et de mes formations.",
     category: "Grossesse & post-partum",
-    date: "2025-03-22",
-    readingMinutes: 5,
+    date: "2025-03-31",
+    readingMinutes: 6,
     content: [
-      "La grossesse est une période de profonds changements, à la fois physiques et émotionnels. Le corps évolue semaine après semaine, et avec lui apparaissent parfois des tensions : dos lourd, jambes fatiguées, sommeil perturbé, peau qui tiraille. Le massage prénatal est un précieux allié pour traverser cette aventure avec plus de douceur.",
-      "Au-delà du soulagement physique, ce moment offre une parenthèse rien que pour vous, à un moment où l'attention se porte beaucoup sur l'arrivée de bébé. C'est aussi un temps d'écoute du corps et de lien, où la future maman peut ressentir pleinement les sensations de sa grossesse.",
-      "Au sein de l'institut, je propose le massage femme enceinte à partir de 16 semaines d'aménorrhée (4 mois révolus). L'installation est entièrement adaptée à votre confort, en position latérale, avec un soutien des coussins pour soulager la pression sur le bassin et le ventre.",
-      "En cas de grossesse pathologique, de douleurs particulières ou de doute sur une contre-indication, je vous invite à demander un avis médical à votre sage-femme ou votre médecin avant la prise de rendez-vous. Mon expérience d'ancienne infirmière me permet d'échanger avec vous, mais l'avis médical primera toujours pour votre sécurité et celle de votre bébé.",
+      {
+        type: "paragraph",
+        text: "Accompagner une femme enceinte, ce n'est pas masser un corps « normal » avec un ventre en plus. C'est rencontrer un corps en pleine transformation, qui n'obéit plus aux mêmes règles, et qui demande une attention complètement renouvelée. Cette nuance, je l'ai mise du temps à l'intégrer pleinement.",
+      },
+      {
+        type: "quote",
+        text: "Une femme enceinte ne vient pas chercher un massage. Elle vient déposer une charge.",
+      },
+      {
+        type: "heading",
+        text: "À partir de quand je propose ce massage",
+      },
+      {
+        type: "paragraph",
+        text: "Je reçois les futures mamans à partir de 16 semaines d'aménorrhée révolues, soit après le 4ème mois. Ce délai n'est pas arbitraire : il correspond au moment où la grossesse est bien installée, et où le corps a vraiment besoin d'un accompagnement régulier.",
+      },
+      {
+        type: "table",
+        caption: "Mes repères selon la période de la grossesse",
+        headers: ["Période", "Ce qu'on travaille", "Ma posture"],
+        rows: [
+          [
+            "16 à 24 SA",
+            "Bas du dos, jambes lourdes",
+            "Installation latérale, pression douce",
+          ],
+          [
+            "24 à 32 SA",
+            "Sciatique, sommeil, respiration",
+            "Beaucoup d'enveloppement, peu de techniques",
+          ],
+          [
+            "32 SA jusqu'au terme",
+            "Préparation, ancrage, lien avec bébé",
+            "Présence avant tout, gestes ralentis",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Ce que mes années d'infirmière m'ont laissé, c'est un réflexe de prudence. Devant le moindre signe inhabituel — œdème suspect, douleur localisée, tension élevée — je redirige systématiquement vers la sage-femme ou le médecin. La séance peut attendre. La sécurité, non.",
+      },
+      {
+        type: "quote",
+        text: "Je ne soigne plus, mais je n'ai pas oublié comment regarder un corps.",
+        author: "Note personnelle, journal de pratique",
+      },
+      {
+        type: "heading",
+        text: "Ce que je vois changer, séance après séance",
+      },
+      {
+        type: "paragraph",
+        text: "Les futures mamans qui reviennent régulièrement me racontent toutes la même chose, ou presque : elles dorment mieux, elles respirent plus loin, elles se sentent moins seules dans leur corps. Et cela, plus que tout protocole, justifie que j'aie choisi ce métier.",
+      },
+      {
+        type: "paragraph",
+        text: "Si vous hésitez, écrivez-moi. On parle. Sans engagement de votre part, simplement pour voir si le moment est juste — pour vous, et pour bébé.",
+      },
     ],
   },
   {
     slug: "premiere-seance-temoignage",
-    title: "« Je n'osais pas franchir la porte » : la première séance racontée",
+    title: "« Je n'osais pas franchir la porte » — le récit d'une cliente",
     excerpt:
-      "Le récit anonyme d'une cliente qui hésitait depuis des mois à prendre rendez-vous. Ce qu'elle a découvert, ressenti, et ce qu'elle aurait aimé savoir avant.",
+      "Une cliente m'a confié, après sa première séance, ce qu'elle aurait aimé savoir avant de pousser ma porte. Je le partage avec son accord, anonymement.",
     category: "Témoignages",
-    date: "2025-02-18",
-    readingMinutes: 4,
+    date: "2025-03-24",
+    readingMinutes: 5,
     content: [
-      "« Cela faisait des mois que j'y pensais. Je voyais passer l'institut sur les réseaux, je trouvais l'ambiance jolie, mais quelque chose me retenait. Peut-être la peur de me dévoiler, de ne pas savoir comment me comporter, de ne pas mériter ce moment. Et puis un matin, j'ai pris le téléphone. »",
-      "La première chose qui rassure, c'est l'échange avant la séance. On prend le temps de parler de ce qui amène, des zones sensibles, des envies. Pas de questionnaire impersonnel : un vrai dialogue, dans une ambiance feutrée, qui permet de poser ses bagages avant même de commencer.",
-      "« L'installation aussi m'a surprise par son attention au détail. Élodie sort de la pièce pour me laisser me changer tranquillement. La lumière est douce, la musique enveloppante. J'ai senti que je pouvais lâcher prise sans avoir à demander la permission. »",
-      "Après la séance, place à un temps d'échange autour d'une boisson fraîche. C'est souvent là que les mots arrivent, que l'émotion remonte parfois. « Je suis repartie plus légère, et avec l'envie de revenir. La vraie surprise, c'est de réaliser à quel point ce temps pour soi est précieux. Si vous hésitez, faites le pas. »",
+      {
+        type: "paragraph",
+        text: "Elle est venue un mardi après-midi. Avant son arrivée, je savais déjà — par nos échanges téléphoniques — qu'elle hésitait depuis des mois. Ce qu'elle m'a raconté ensuite, autour de la tisane qui clôt toujours mes séances, m'a tellement émue que je lui ai demandé l'autorisation d'en faire un texte.",
+      },
+      {
+        type: "quote",
+        text: "Cela faisait un an que je regardais votre site. Un an. Et chaque fois, je trouvais une bonne raison de ne pas appeler.",
+        author: "Cliente, 42 ans",
+      },
+      {
+        type: "heading",
+        text: "Ses freins, et ce qui les a levés",
+      },
+      {
+        type: "paragraph",
+        text: "Elle m'a listé, très précisément, les peurs qui l'avaient retenue. J'ai trouvé sa lucidité bouleversante, parce qu'elle met des mots sur ce que beaucoup de femmes ressentent sans oser le dire.",
+      },
+      {
+        type: "table",
+        caption: "Ce qu'elle redoutait, ce qu'elle a trouvé",
+        headers: ["Sa peur", "La réalité"],
+        rows: [
+          [
+            "« Je vais devoir me dévoiler »",
+            "Tout le rituel d'installation respecte la pudeur",
+          ],
+          [
+            "« Je ne saurai pas comment me comporter »",
+            "Aucun comportement attendu, juste être là",
+          ],
+          [
+            "« Je n'ai pas le temps pour ça »",
+            "Justement, c'est le seul moment où l'on s'arrête vraiment",
+          ],
+          [
+            "« Je ne mérite pas ce moment »",
+            "Personne n'a à mériter d'être bien dans son corps",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Cette dernière phrase, je l'ai notée dans mon carnet. Parce qu'elle dit quelque chose de profond sur le rapport de beaucoup de femmes au soin qu'elles s'autorisent — ou plutôt, qu'elles ne s'autorisent pas.",
+      },
+      {
+        type: "quote",
+        text: "Je suis repartie plus légère, et avec l'envie de revenir. Si vous hésitez, faites le pas. Le seul.",
+      },
+      {
+        type: "paragraph",
+        text: "Elle est revenue. Trois fois depuis. Et chaque séance est différente, parce qu'elle arrive chaque fois un peu plus elle-même. C'est peut-être ça, finalement, ce que j'aime le plus dans ce métier : voir une femme s'autoriser, séance après séance, à occuper sa propre place.",
+      },
     ],
   },
 ];
