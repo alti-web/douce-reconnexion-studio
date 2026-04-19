@@ -82,9 +82,86 @@ const BlogArticlePage = () => {
             transition={{ duration: 0.4, delay: 0.15 }}
             className="space-y-6 text-base md:text-lg leading-relaxed text-foreground/90"
           >
-            {post.content.map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
+            {post.content.map((block, i) => {
+              if (block.type === "paragraph") {
+                return <p key={i}>{block.text}</p>;
+              }
+              if (block.type === "heading") {
+                return (
+                  <h2
+                    key={i}
+                    className="font-display text-2xl md:text-3xl tracking-tight pt-4 text-foreground"
+                  >
+                    {block.text}
+                  </h2>
+                );
+              }
+              if (block.type === "quote") {
+                return (
+                  <blockquote
+                    key={i}
+                    className="my-8 border-l-2 border-primary pl-6 py-2 italic text-foreground/80"
+                  >
+                    <p className="font-display text-xl md:text-2xl leading-relaxed mb-2">
+                      « {block.text} »
+                    </p>
+                    {block.author && (
+                      <footer className="text-sm not-italic text-muted-foreground">
+                        — {block.author}
+                      </footer>
+                    )}
+                  </blockquote>
+                );
+              }
+              if (block.type === "table") {
+                return (
+                  <div
+                    key={i}
+                    className="my-8 overflow-hidden rounded-2xl border border-border bg-card"
+                  >
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm md:text-base">
+                        <thead className="bg-secondary/60">
+                          <tr>
+                            {block.headers.map((h, hi) => (
+                              <th
+                                key={hi}
+                                className="px-4 py-3 text-left font-display font-medium text-foreground"
+                              >
+                                {h}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {block.rows.map((row, ri) => (
+                            <tr
+                              key={ri}
+                              className="border-t border-border last:border-0"
+                            >
+                              {row.map((cell, ci) => (
+                                <td
+                                  key={ci}
+                                  className="px-4 py-3 align-top text-foreground/85"
+                                >
+                                  {cell}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    {block.caption && (
+                      <p className="px-4 py-2 text-xs text-muted-foreground bg-secondary/30 border-t border-border text-center">
+                        {block.caption}
+                      </p>
+                    )}
+                  </div>
+                );
+              }
+              return null;
+            })}
           </motion.div>
 
           <div className="mt-14 p-8 md:p-10 bg-secondary/50 rounded-2xl text-center">
