@@ -17,6 +17,7 @@ const Footer = () => {
             <p className="font-medium text-sm mb-3">Navigation</p>
             <nav className="flex flex-col gap-2">
               <a href="#massages" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Massages</a>
+              <a href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</a>
               <a href="#temoignages" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Témoignages</a>
               <a href="#a-propos" className="text-sm text-muted-foreground hover:text-foreground transition-colors">À propos</a>
               <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
