@@ -24,7 +24,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ce-que-mes-mains-ont-appris",
     title: "Ce que mes mains ont appris que ma tête ignorait",
     excerpt:
-      "En passant de l'hôpital à la table de massage, j'ai redécouvert le toucher autrement. Retour sur ce que mes mains m'ont enseigné, loin des protocoles.",
+      "En passant de l'hôpital à la table de massage, j'ai redécouvert le toucher autrement. Retour sur ce que mes mains m'ont enseigné.",
     category: "Bien-être",
     date: "2025-04-14",
     readingMinutes: 5,
@@ -57,12 +57,12 @@ export const blogPosts: BlogPost[] = [
           ["Intention", "Réparer, surveiller", "Accueillir, relâcher"],
           ["Rythme", "Efficace, rapide", "Lent, ample"],
           ["Posture", "Faire pour", "Être avec"],
-          ["Réussite", "Geste technique juste", "Cliente qui lâche prise"],
+          ["Réussite", "Geste technique juste", "Moment de présence partagé"],
         ],
       },
       {
         type: "paragraph",
-        text: "Cette semaine, une cliente m'a dit en se relevant : « Je ne savais pas que mon dos pouvait être aussi silencieux. » Cette phrase m'a touchée. Parce qu'elle dit tout : le corps a sa propre parole, et nos mains peuvent l'aider à la déposer.",
+        text: "Cette semaine, une cliente m'a dit en se relevant : « Je ne savais même pas que j'avais ces tensions dans le dos. » Cette phrase m'a touchée. Parce qu'elle dit tout : le corps a sa propre parole, et nos mains peuvent l'aider à la déposer.",
       },
       {
         type: "quote",
