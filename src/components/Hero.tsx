@@ -65,6 +65,13 @@ const Hero = () => {
           >
             Je réserve mon moment détente
           </a>
+          {/* Mobile & tablet only - Trouver mon massage */}
+          <a
+            href="/massages"
+            className="lg:hidden bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium shadow-soft hover:shadow-hover transition-all duration-200 active:scale-95"
+          >
+            Trouver mon massage
+          </a>
           {/* Quiz button - mobile & tablet only */}
           <button
             onClick={() => {
