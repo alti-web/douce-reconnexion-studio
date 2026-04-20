@@ -118,8 +118,8 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "quote",
-        text: "Je ne savais même pas que j'avais ces tensions dans le dos. Et là, d'un coup, je les sentais. Ça faisait un bien fou.",
-        author: "Une cliente, après sa première séance",
+        text: "Je ne pensais pas qu'un massage visage pouvait procurer autant de détente — pas seulement sur le visage, mais dans tout le corps.",
+        author: "Une cliente, après son premier massage facial japonais",
       },
       {
         type: "paragraph",
@@ -150,11 +150,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Je reçois les futures mamans à partir de 16 semaines d'aménorrhée révolues, soit après le 4ème mois. Ce délai n'est pas arbitraire : il correspond au moment où la grossesse est bien installée, et où le corps commence vraiment à se transformer. Mais chaque femme est différente, et chaque grossesse aussi. Certaines viennent à 20 semaines, d'autres à 32. L'important, c'est de trouver le moment qui convient à celle qui est là, aujourd'hui.",
+        text: "Je reçois les futures mamans à partir de 16 semaines d'aménorrhée révolues, soit après le 4ème mois. Ce délai n'est pas arbitraire : c'est un délai de précaution, même si toutes les écoles de formation ne le préconisent pas de la même façon. Mais chaque femme est différente, et chaque grossesse aussi. Certaines viennent à 20 semaines, d'autres à 32. L'important, c'est de trouver le moment qui convient à celle qui est là, aujourd'hui.",
       },
       {
         type: "paragraph",
-        text: "Ce que mes années d'infirmière m'ont laissé, c'est un réflexe de prudence et d'observation. Devant le moindre signe inhabituel — œdème suspect, douleur localisée, tension élevée — je redirige systématiquement vers la sage-femme ou le médecin. La séance peut attendre. La sécurité, non. Mais au-delà de cette vigilance, c'est aussi l'habitude de lire ce que le corps dit, au-delà des mots. Le non-verbal, les micro-expressions, la façon dont une femme se tient sur la table.",
+        text: "Ce que mon expérience en tant qu'infirmière m'a transmis, c'est un réflexe de prudence et d'observation. Devant le moindre signe inhabituel — œdème suspect, douleur aiguë — je redirige systématiquement vers la sage-femme ou le médecin. La séance peut attendre. La sécurité, non.",
       },
       {
         type: "quote",
@@ -162,16 +162,12 @@ export const blogPosts: BlogPost[] = [
         author: "Note de pratique",
       },
       {
-        type: "heading",
-        text: "Ce que j'observe, quand une femme enceinte repose",
+        type: "paragraph",
+        text: "Pour l'instant, les futures mamans qui me consultent viennent de façon ponctuelle. Certaines pour un moment de détente précis, d'autres parce qu'un ami ou une sage-femme leur a parlé de moi. Chaque rencontre est différente, chaque besoin aussi. Certaines cherchent à soulager leurs jambes lourdes, d'autres ont besoin de simplement s'allonger et qu'on s'occupe et prenne soin d'elles. Il n'y a pas de 'bonne' raison de venir.",
       },
       {
         type: "paragraph",
-        text: "Pour l'instant, les futures mamans qui me consultent viennent de façon ponctuelle. Certaines pour un moment de détente précis, d'autres parce qu'un ami ou une sage-femme leur a parlé de moi. Chaque rencontre est différente, chaque besoin aussi. Certaines cherchent à soulager leurs jambes lourdes, d'autres ont besoin de simplement s'allonger et être prises en charge un moment. Il n'y a pas de 'bonne' raison de venir.",
-      },
-      {
-        type: "paragraph",
-        text: "Ce que je remarque souvent, c'est ce moment précis où le corps s'affaisse vraiment sur la table. Quand les épaules descendent, quand la respiration s'allonge. Ce n'est pas systématique, ce n'est pas un objectif que je me fixe. Mais quand ça arrive, c'est beau. C'est le signe que cette femme, là, maintenant, a trouvé un moment de répit.",
+        text: "Quand les épaules descendent, quand la respiration s'allonge — c'est beau. C'est le signe que cette femme, là, maintenant, a trouvé un moment de répit.",
       },
       {
         type: "paragraph",
@@ -190,7 +186,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: "paragraph",
-        text: "Elle est venue un vendredi après-midi. Avant son arrivée, je savais déjà — par notre échange téléphonique — qu'elle hésitait depuis plusieurs mois. Ce qu'elle m'a raconté ensuite, autour du verre d'eau fraîche que je propose en fin de séance, m'a touchée et je lui ai demandé l'autorisation d'en faire un texte.",
+        text: "Elle est venue un vendredi après-midi. Avant son arrivée, je savais déjà — par notre échange — qu'elle hésitait depuis plusieurs mois. Ce qu'elle m'a raconté ensuite, autour du verre d'eau fraîche que je propose en fin de séance, ça m'a touchée et je lui ai demandé l'autorisation d'en faire un texte.",
       },
       {
         type: "quote",
