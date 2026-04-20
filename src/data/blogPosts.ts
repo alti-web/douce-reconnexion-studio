@@ -138,11 +138,11 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: "paragraph",
-        text: "Accompagner une femme enceinte, ce n'est pas masser un corps « normal » avec un ventre en plus. C'est rencontrer un corps en pleine transformation, qui n'obéit plus aux mêmes règles, et qui demande une attention complètement renouvelée. Cette nuance, je l'ai mise du temps à l'intégrer pleinement.",
+        text: "Accompagner une femme enceinte, ce n'est pas masser un corps « normal » avec un ventre en plus. C'est rencontrer un corps en pleine transformation, qui n'obéit plus aux mêmes règles, et qui demande une attention complètement renouvelée. Chaque femme arrive avec son histoire, ses attentes, ses inquiétudes. Il n'y a pas de protocole universel qui convienne à toutes.",
       },
       {
         type: "quote",
-        text: "Une femme enceinte ne vient pas chercher un massage. Elle vient déposer une charge.",
+        text: "Le massage prénatal, c'est avant tout un moment d'échange et de présence. Ce n'est pas moi qui fais le travail, c'est nous qui le faisons ensemble.",
       },
       {
         type: "heading",
@@ -150,50 +150,32 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Je reçois les futures mamans à partir de 16 semaines d'aménorrhée révolues, soit après le 4ème mois. Ce délai n'est pas arbitraire : il correspond au moment où la grossesse est bien installée, et où le corps a vraiment besoin d'un accompagnement régulier.",
-      },
-      {
-        type: "table",
-        caption: "Mes repères selon la période de la grossesse",
-        headers: ["Période", "Ce qu'on travaille", "Ma posture"],
-        rows: [
-          [
-            "16 à 24 SA",
-            "Bas du dos, jambes lourdes",
-            "Installation latérale, pression douce",
-          ],
-          [
-            "24 à 32 SA",
-            "Sciatique, sommeil, respiration",
-            "Beaucoup d'enveloppement, peu de techniques",
-          ],
-          [
-            "32 SA jusqu'au terme",
-            "Préparation, ancrage, lien avec bébé",
-            "Présence avant tout, gestes ralentis",
-          ],
-        ],
+        text: "Je reçois les futures mamans à partir de 16 semaines d'aménorrhée révolues, soit après le 4ème mois. Ce délai n'est pas arbitraire : il correspond au moment où la grossesse est bien installée, et où le corps commence vraiment à se transformer. Mais chaque femme est différente, et chaque grossesse aussi. Certaines viennent à 20 semaines, d'autres à 32. L'important, c'est de trouver le moment qui convient à celle qui est là, aujourd'hui.",
       },
       {
         type: "paragraph",
-        text: "Ce que mes années d'infirmière m'ont laissé, c'est un réflexe de prudence. Devant le moindre signe inhabituel — œdème suspect, douleur localisée, tension élevée — je redirige systématiquement vers la sage-femme ou le médecin. La séance peut attendre. La sécurité, non.",
+        text: "Ce que mes années d'infirmière m'ont laissé, c'est un réflexe de prudence et d'observation. Devant le moindre signe inhabituel — œdème suspect, douleur localisée, tension élevée — je redirige systématiquement vers la sage-femme ou le médecin. La séance peut attendre. La sécurité, non. Mais au-delà de cette vigilance, c'est aussi l'habitude de lire ce que le corps dit, au-delà des mots. Le non-verbal, les micro-expressions, la façon dont une femme se tient sur la table.",
       },
       {
         type: "quote",
-        text: "Je ne soigne plus, mais je n'ai pas oublié comment regarder un corps.",
-        author: "Note personnelle, journal de pratique",
+        text: "Je ne soigne plus, mais je suis toujours aussi observatrice de ce que le corps 'dit'. Le verbal, le non-verbal — tout compte.",
+        author: "Note de pratique",
       },
       {
         type: "heading",
-        text: "Ce que je vois changer, séance après séance",
+        text: "Ce que j'observe, quand une femme enceinte repose",
       },
       {
         type: "paragraph",
-        text: "Les futures mamans qui reviennent régulièrement me racontent toutes la même chose, ou presque : elles dorment mieux, elles respirent plus loin, elles se sentent moins seules dans leur corps. Et cela, plus que tout protocole, justifie que j'aie choisi ce métier.",
+        text: "Pour l'instant, les futures mamans qui me consultent viennent de façon ponctuelle. Certaines pour un moment de détente précis, d'autres parce qu'un ami ou une sage-femme leur a parlé de moi. Chaque rencontre est différente, chaque besoin aussi. Certaines cherchent à soulager leurs jambes lourdes, d'autres ont besoin de simplement s'allonger et être prises en charge un moment. Il n'y a pas de 'bonne' raison de venir.",
       },
       {
         type: "paragraph",
-        text: "Si vous hésitez, écrivez-moi. On parle. Sans engagement de votre part, simplement pour voir si le moment est juste — pour vous, et pour bébé.",
+        text: "Ce que je remarque souvent, c'est ce moment précis où le corps s'affaisse vraiment sur la table. Quand les épaules descendent, quand la respiration s'allonge. Ce n'est pas systématique, ce n'est pas un objectif que je me fixe. Mais quand ça arrive, c'est beau. C'est le signe que cette femme, là, maintenant, a trouvé un moment de répit.",
+      },
+      {
+        type: "paragraph",
+        text: "Si vous êtes enceinte et que vous hésitez, écrivez-moi. On parle. Sans engagement de votre part, simplement pour voir si le moment est juste — pour vous, et pour votre bébé. Chaque grossesse est unique, et ce qui compte, c'est de trouver ce qui vous convient, aujourd'hui.",
       },
     ],
   },
