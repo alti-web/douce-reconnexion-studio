@@ -190,11 +190,11 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: "paragraph",
-        text: "Elle est venue un mardi après-midi. Avant son arrivée, je savais déjà — par nos échanges téléphoniques — qu'elle hésitait depuis des mois. Ce qu'elle m'a raconté ensuite, autour de la tisane qui clôt toujours mes séances, m'a tellement émue que je lui ai demandé l'autorisation d'en faire un texte.",
+        text: "Elle est venue un vendredi après-midi. Avant son arrivée, je savais déjà — par notre échange téléphonique — qu'elle hésitait depuis plusieurs mois. Ce qu'elle m'a raconté ensuite, autour du verre d'eau fraîche que je propose en fin de séance, m'a touchée et je lui ai demandé l'autorisation d'en faire un texte.",
       },
       {
         type: "quote",
-        text: "Cela faisait un an que je regardais votre site. Un an. Et chaque fois, je trouvais une bonne raison de ne pas appeler.",
+        text: "Cela faisait plusieurs mois que je regardais votre site. Et chaque fois, je trouvais une bonne raison de ne pas appeler.",
         author: "Cliente, 42 ans",
       },
       {
@@ -211,8 +211,12 @@ export const blogPosts: BlogPost[] = [
         headers: ["Sa peur", "La réalité"],
         rows: [
           [
-            "« Je vais devoir me dévoiler »",
-            "Tout le rituel d'installation respecte la pudeur",
+            "« Je n'aime pas mon corps, je vais devoir le montrer »",
+            "Pendant le massage, je ne regarde pas un corps : je ressens. Aucun jugement esthétique, juste de l'attention",
+          ],
+          [
+            "« La pudeur va me mettre mal à l'aise »",
+            "Je sors de la pièce pour l'installation, je couvre systématiquement la poitrine avec le drap, et je peux tamiser encore plus la lumière sur simple demande",
           ],
           [
             "« Je ne saurai pas comment me comporter »",
