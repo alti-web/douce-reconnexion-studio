@@ -154,6 +154,10 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
+        text: "Néanmoins, ce massage ne pourra être réalisé qu'à partir de 16 semaines d'aménorrhée soit début du 4e mois ou 3 mois révolus.",
+      },
+      {
+        type: "paragraph",
         text: "Ce que mon expérience en tant qu'infirmière m'a transmis, c'est un réflexe de prudence et d'observation. Devant le moindre signe inhabituel — œdème suspect, douleur aiguë — je redirige systématiquement vers la sage-femme ou le médecin. La séance peut attendre. La sécurité, non.",
       },
       {
