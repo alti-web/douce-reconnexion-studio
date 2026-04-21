@@ -35,11 +35,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "quote",
-        text: "Le toucher n'est pas un geste, c'est une présence.",
+        text: "Le toucher au delà d'un geste, une présence.",
       },
       {
         type: "paragraph",
-        text: "Cette phrase, je me la répète souvent en début de séance. Parce qu'avant de masser, il faut accueillir. Sentir si une épaule se rétracte, si une respiration se suspend, si une zone se ferme. Mes mains me disent ces choses bien avant que la cliente ne les exprime — souvent même, avant qu'elle n'en ait conscience.",
+        text: "Cette phrase, je l'incarne à chacune de mes séances. Parce qu'avant de masser, il faut accueillir. Sentir si une épaule se rétracte, si une respiration se suspend, si une zone se ferme. Mes mains me disent ces choses bien avant que la cliente ne les exprime — souvent même, avant qu'elle n'en ait conscience.",
       },
       {
         type: "heading",
@@ -150,7 +150,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Je propose ce massage à partir de 16 semaines d'aménorrhée, soit 3 mois révolus. Chaque femme est différente, et chaque grossesse aussi. Certaines viennent tôt, d'autres plus tard dans la grossesse. L'important, c'est de trouver le moment qui convient à celle qui est là, aujourd'hui.",
+        text: "Chaque femme est différente, et chaque grossesse aussi. Certaines viennent tôt, d'autres plus tard dans la grossesse. L'important, c'est de trouver le moment qui convient à celle qui est là, aujourd'hui.",
       },
       {
         type: "paragraph",
