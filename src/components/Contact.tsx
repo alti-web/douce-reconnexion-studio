@@ -96,6 +96,9 @@ const Contact = () => {
               <div>
                 <p className="font-medium mb-1">Horaires</p>
                 <p className="text-muted-foreground text-sm">Sur rendez-vous uniquement</p>
+                <p className="text-xs text-primary mt-2 font-medium">
+                  Ouvert 1er mai et dimanche de Pentecôte
+                </p>
               </div>
             </div>
 
