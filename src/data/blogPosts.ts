@@ -90,7 +90,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "quote",
-        text: "Prendre soin de son visage le soir, c'est apprendre à se quitter la journée avec douceur.",
+        text: "Prendre soin de son visage le soir, c'est apprendre à quitter sa journée en douceur.",
       },
       {
         type: "heading",
@@ -150,7 +150,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Je reçois les futures mamans à partir de 16 semaines d'aménorrhée révolues, soit après le 4ème mois. Ce délai n'est pas arbitraire : c'est un délai de précaution, même si toutes les écoles de formation ne le préconisent pas de la même façon. Mais chaque femme est différente, et chaque grossesse aussi. Certaines viennent à 20 semaines, d'autres à 32. L'important, c'est de trouver le moment qui convient à celle qui est là, aujourd'hui.",
+        text: "Chaque femme est différente, et chaque grossesse aussi. Certaines viennent tôt, d'autres plus tard dans la grossesse. L'important, c'est de trouver le moment qui convient à celle qui est là, aujourd'hui.",
       },
       {
         type: "paragraph",
