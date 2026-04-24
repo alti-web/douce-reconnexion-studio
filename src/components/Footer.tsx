@@ -41,9 +41,14 @@ const Footer = () => {
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} Fondamental Massage — Élodie Valdès. Tous droits réservés.
           </p>
-          <a href="/mentions-legales" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-            Mentions légales
-          </a>
+          <div className="flex gap-4">
+            <a href="/mentions-legales" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+              Mentions légales
+            </a>
+            <a href="/cgv" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+              CGV
+            </a>
+          </div>
         </div>
       </div>
     </footer>
