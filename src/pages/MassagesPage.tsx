@@ -272,7 +272,10 @@ const MassagesPage = () => {
                   Une invitation à relâcher, à se laisser porter par la synergie des manœuvres manuelles enveloppantes et la sensation unique de la baguette de Kansa qui glisse et se réchauffe délicatement au contact de la peau.
                 </p>
                 <p>
-                  Sur le visage, l'huile de coco-mangue enrichie d'huile essentielle d'hélichryse, vous enveloppe d'une douceur réconfortante, invitant le corps et le mental à s'abandonner profondément, dans un lâcher-prise total.
+                  Sur le visage, l'huile de sésame, enrichie d'une synergie d'huiles essentielles de rose, de néroli et de géranium rosat, enveloppe la peau d'une douceur réconfortante. Elle invite le corps et le mental à s'abandonner progressivement, dans un lâcher-prise profond et naturel.
+                </p>
+                <p className="text-xs italic">
+                  En cas de sensibilité, d'allergie, de contre-indication ou de préférence personnelle, une alternative sans huiles essentielles avec une huile végétale neutre (abricot ou pissenlit) peut être proposée.
                 </p>
               </div>
               <p className="text-primary text-sm italic mb-6">Un voyage sensoriel pour se déposer totalement.</p>
