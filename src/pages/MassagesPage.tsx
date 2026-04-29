@@ -84,6 +84,13 @@ const MassagesPage = () => {
                   <p className="font-medium">Abonnement 6 mois</p>
                   <p className="text-muted-foreground">1 massage d'1h/mois — <span className="text-primary font-medium">50 €/séance</span></p>
                 </div>
+                <div className="bg-accent/40 rounded-xl p-4 text-sm sm:col-span-2">
+                  <p className="font-medium">Abonnement Liberté <span className="text-xs font-normal text-muted-foreground">(3 ou 6 mois)</span></p>
+                  <p className="text-muted-foreground">
+                    Chaque mois, choisissez entre <span className="text-foreground font-medium">le massage corps "Je lâche-prise" (1h)</span> ou <span className="text-foreground font-medium">le massage Shinzu the Face (1h)</span>, selon vos envies et besoins du moment.
+                  </p>
+                  <p className="text-muted-foreground mt-1">Tarifs identiques : <span className="text-primary font-medium">55 €/séance</span> (3 mois) ou <span className="text-primary font-medium">50 €/séance</span> (6 mois)</p>
+                </div>
               </div>
             </div>
           </motion.div>
