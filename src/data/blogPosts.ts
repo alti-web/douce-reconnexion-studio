@@ -21,6 +21,82 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "bienfaits-regularite-massage",
+    title: "Pourquoi la régularité change tout en massage",
+    excerpt:
+      "Une séance fait du bien. Une habitude transforme. Voici ce que j'observe, mois après mois, chez les clientes qui s'offrent un rendez-vous régulier avec elles-mêmes.",
+    category: "Bien-être",
+    date: "2025-04-21",
+    readingMinutes: 5,
+    content: [
+      {
+        type: "paragraph",
+        text: "Une séance de massage, c'est une parenthèse. Une vraie. Mais ce que j'observe à l'institut, depuis que j'accompagne des femmes au fil des mois, c'est qu'un massage isolé et un massage régulier ne produisent tout simplement pas les mêmes effets. Le premier soulage. Le second transforme.",
+      },
+      {
+        type: "quote",
+        text: "Le corps n'oublie pas ce qu'on lui offre régulièrement. Il s'en souvient, et il en redemande — autrement.",
+      },
+      {
+        type: "heading",
+        text: "Ce que la régularité change vraiment",
+      },
+      {
+        type: "paragraph",
+        text: "À la première séance, beaucoup de femmes arrivent avec une accumulation : tensions installées depuis des semaines, mental qui tourne, respiration courte. Le corps a besoin de temps simplement pour se déposer. À la deuxième, à la troisième, quelque chose change : la cliente s'allonge et son corps sait déjà. Il reconnaît le lieu, le rythme, l'odeur. Le lâcher-prise arrive plus vite, plus profond.",
+      },
+      {
+        type: "table",
+        caption: "Ce que j'observe entre une séance ponctuelle et un rythme mensuel",
+        headers: ["Aspect", "Séance ponctuelle", "Rythme mensuel"],
+        rows: [
+          ["Temps de relâchement", "Long, parfois difficile", "Quasi immédiat"],
+          ["Tensions", "Soulagées sur le moment", "Empêchées de s'installer"],
+          ["Sommeil", "Améliore une nuit", "S'installe dans la durée"],
+          ["Conscience corporelle", "Découverte", "Affinée, plus précise"],
+          ["Rapport au soin", "Exception", "Engagement envers soi"],
+        ],
+      },
+      {
+        type: "heading",
+        text: "Un rendez-vous mensuel avec soi",
+      },
+      {
+        type: "paragraph",
+        text: "Ce que j'aime dans les abonnements, ce n'est pas la dimension commerciale — c'est ce qu'ils provoquent. Une cliente qui sait qu'elle a un créneau réservé chaque mois ne se demande plus si elle « mérite » de venir. Elle vient. Et entre deux séances, elle s'autorise plus facilement à écouter son corps, parce qu'elle sait qu'elle aura bientôt un espace pour le déposer.",
+      },
+      {
+        type: "quote",
+        text: "Avant, je venais quand je n'en pouvais plus. Maintenant, je viens avant d'en arriver là. Ça change tout.",
+        author: "Une cliente, après six mois de rythme mensuel",
+      },
+      {
+        type: "heading",
+        text: "Varier pour mieux écouter",
+      },
+      {
+        type: "paragraph",
+        text: "C'est aussi pour cela que j'ai voulu proposer une formule plus libre, qui laisse le choix chaque mois entre le massage du corps « Je lâche-prise » et le Shinzu the Face. Parce que les besoins changent. Un mois, c'est le dos qui appelle. Le suivant, c'est la mâchoire crispée, le mental qui ne se pose pas — et là, le visage devient une porte d'entrée incroyable vers la détente globale.",
+      },
+      {
+        type: "paragraph",
+        text: "Le Shinzu the Face est d'ailleurs un soin que peu de praticiennes proposent dans la région, et qui surprend toujours par la profondeur de relâchement qu'il procure — bien au-delà du visage lui-même.",
+      },
+      {
+        type: "heading",
+        text: "Et si vous hésitez encore",
+      },
+      {
+        type: "paragraph",
+        text: "S'engager sur trois ou six mois peut sembler beaucoup. Mais regardez autrement : c'est trois ou six rendez-vous posés dans votre agenda, rien que pour vous. Trois ou six moments où personne ne vous demandera rien. Trois ou six respirations, étalées dans le temps, qui finissent par dessiner une autre façon d'habiter son corps.",
+      },
+      {
+        type: "paragraph",
+        text: "La régularité, ce n'est pas une contrainte. C'est un cadeau qu'on se fait à l'avance, en sachant qu'on en aura besoin.",
+      },
+    ],
+  },
+  {
     slug: "ce-que-mes-mains-ont-appris",
     title: "Ce que mes mains ont appris que ma tête ignorait",
     excerpt:
