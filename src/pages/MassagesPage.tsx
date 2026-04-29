@@ -293,7 +293,10 @@ const MassagesPage = () => {
               </div>
               <div className="space-y-3 text-muted-foreground text-sm leading-relaxed mb-4">
                 <p>
-                  Bercée par le rythme des mouvements enveloppants, le stress diminue, les tensions se dissipent et peu à peu le corps se sent en sécurité, en confiance. Puis vient le visage… et tout bascule : grâce à des manœuvres manuelles et du GuaSha, les mâchoires se desserrent, le mental ralentit sa course, et un calme profond vous envahit, laissant place à une détente totale.
+                  Bercée par le rythme des mouvements enveloppants, le stress diminue, les tensions se dissipent et peu à peu le corps se sent en sécurité, en confiance.
+                </p>
+                <p>
+                  Puis vient le visage… et tout bascule : grâce à des manœuvres manuelles et du GuaSha, les mâchoires se desserrent, le mental ralentit sa course, et un calme profond vous envahit, laissant place à une détente totale.
                 </p>
               </div>
               <p className="text-primary text-sm italic mb-6">Vivez un moment suspendu de lâcher-prise.</p>
