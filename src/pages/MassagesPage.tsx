@@ -84,6 +84,13 @@ const MassagesPage = () => {
                   <p className="font-medium">Abonnement 6 mois</p>
                   <p className="text-muted-foreground">1 massage d'1h/mois — <span className="text-primary font-medium">50 €/séance</span></p>
                 </div>
+                <div className="bg-accent/40 rounded-xl p-4 text-sm sm:col-span-2">
+                  <p className="font-medium">Abonnement Liberté <span className="text-xs font-normal text-muted-foreground">(3 ou 6 mois)</span></p>
+                  <p className="text-muted-foreground">
+                    Chaque mois, choisissez entre <span className="text-foreground font-medium">le massage corps "Je lâche-prise" (1h)</span> ou <span className="text-foreground font-medium">le massage Shinzu the Face (1h)</span>, selon vos envies et besoins du moment.
+                  </p>
+                  <p className="text-muted-foreground mt-1">Tarifs identiques : <span className="text-primary font-medium">55 €/séance</span> (3 mois) ou <span className="text-primary font-medium">50 €/séance</span> (6 mois)</p>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -293,7 +300,10 @@ const MassagesPage = () => {
               </div>
               <div className="space-y-3 text-muted-foreground text-sm leading-relaxed mb-4">
                 <p>
-                  Bercée par le rythme des mouvements enveloppants, le stress diminue, les tensions se dissipent et peu à peu le corps se sent en sécurité, en confiance. Puis vient le visage… et tout bascule : grâce à des manœuvres manuelles et du GuaSha, les mâchoires se desserrent, le mental ralentit sa course, et un calme profond vous envahit, laissant place à une détente totale.
+                  Bercée par le rythme des mouvements enveloppants, le stress diminue, les tensions se dissipent et peu à peu le corps se sent en sécurité, en confiance.
+                </p>
+                <p>
+                  Puis vient le visage… et tout bascule : grâce à des manœuvres manuelles et du GuaSha, les mâchoires se desserrent, le mental ralentit sa course, et un calme profond vous envahit, laissant place à une détente totale.
                 </p>
               </div>
               <p className="text-primary text-sm italic mb-6">Vivez un moment suspendu de lâcher-prise.</p>
@@ -395,7 +405,10 @@ const MassagesPage = () => {
               <h3 className="font-display text-xl tracking-tight mb-2">"Je lâche-prise" & Doux Éclat — Duo</h3>
               <div className="space-y-3 text-muted-foreground text-sm leading-relaxed mb-4">
                 <p>
-                  Bercée par le rythme des mouvements enveloppants, le stress diminue, les tensions se dissipent et peu à peu le corps se sent en sécurité, en confiance. Puis vient le visage… et tout bascule : grâce à des manœuvres manuelles et du GuaSha, les mâchoires se desserrent, le mental ralentit sa course, et un calme profond vous envahit, laissant place à une détente totale.
+                  Bercée par le rythme des mouvements enveloppants, le stress diminue, les tensions se dissipent et peu à peu le corps se sent en sécurité, en confiance.
+                </p>
+                <p>
+                  Puis vient le visage… et tout bascule : grâce à des manœuvres manuelles et du GuaSha, les mâchoires se desserrent, le mental ralentit sa course, et un calme profond vous envahit, laissant place à une détente totale.
                 </p>
               </div>
               <div className="flex items-center gap-3 mb-6 text-sm">
