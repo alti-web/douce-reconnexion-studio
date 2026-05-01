@@ -27,13 +27,13 @@ const specificAccompaniments = [
     icon: Baby,
     title: "Vivre sa grossesse autrement",
     description:
-      "Un massage prénatal enveloppant, spécialement adapté aux femmes enceintes dès le 4ᵉ mois. Un moment de douceur pour soulager les tensions liées à la grossesse, accompagner son corps en pleine transformation et se relier à son bébé.",
+      "Un moment pour se retrouver, accompagner les transformations du corps et se relier à son bébé.",
   },
   {
     icon: HeartPulse,
     title: "Soutenir sa fertilité",
     description:
-      "Un massage spécifique pour accompagner les femmes en parcours de conception, qu'il soit naturel ou médicalement assisté. Il vous aide à revenir pleinement dans votre corps et accueillir votre projet de maternité avec plus de sérénité.",
+      "Un espace pour se recentrer et s'apaiser dans son parcours de pré-conception.",
   },
 ];
 
