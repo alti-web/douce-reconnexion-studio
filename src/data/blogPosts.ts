@@ -31,11 +31,15 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: "paragraph",
-        text: "Une séance de massage, c'est une parenthèse. Une vraie. Mais ce que j'observe à l'institut, depuis que j'accompagne des femmes au fil des mois, c'est qu'un massage isolé et un massage régulier ne produisent tout simplement pas les mêmes effets. Le premier soulage. Le second transforme.",
+        text: "Une séance de massage de temps en temps ou une fois par an, c'est une parenthèse bien-être, une vraie.",
+      },
+      {
+        type: "paragraph",
+        text: "Mais ce que j'ai pu observer au fil des mois depuis que j'accompagne des femmes stressées, voire épuisées par la gestion du quotidien, c'est qu'un massage occasionnel et un massage régulier ne produisent pas les mêmes effets. Le premier relaxe, soulage. Le second transforme.",
       },
       {
         type: "quote",
-        text: "Le corps n'oublie pas ce qu'on lui offre régulièrement. Il s'en souvient, et il en redemande — autrement.",
+        text: "Le corps a une mémoire et se souvient de ce qu'on lui offre régulièrement.",
       },
       {
         type: "heading",
@@ -43,7 +47,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "À la première séance, beaucoup de femmes arrivent avec une accumulation : tensions installées depuis des semaines, mental qui tourne, respiration courte. Le corps a besoin de temps simplement pour se déposer. À la deuxième, à la troisième, quelque chose change : la cliente s'allonge et son corps sait déjà. Il reconnaît le lieu, le rythme, l'odeur. Le lâcher-prise arrive plus vite, plus profond.",
+        text: "À la première séance, beaucoup de femmes arrivent souvent avec une accumulation de pleins de choses : tensions installées depuis des semaines voire des mois, un mental actif en permanence, une respiration courte. Le corps a besoin de temps afin qu'il comprenne qu'il n'a plus besoin d'être en alerte permanente et qu'il peut basculer en mode « pause ». Au fil des séances mensuelles, quelque chose se modifie. La cliente s'allonge et là, le corps sait : il se souvient de ces petits détails qui lui permettent de basculer dans la relaxation — ambiance olfactive, lieu apaisant, chaleur de la table de massage. Quant au lâcher-prise, il arrive plus facilement, plus rapidement, voire plus profondément.",
       },
       {
         type: "table",
