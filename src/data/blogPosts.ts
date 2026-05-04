@@ -1,5 +1,5 @@
 export type BlogBlock =
-  | { type: "paragraph"; text: string }
+  | { type: "paragraph"; text: string; emphasis?: "bold" }
   | { type: "heading"; text: string }
   | { type: "quote"; text: string; author?: string }
   | {
@@ -67,12 +67,12 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "Ce que j'aime dans les abonnements, ce n'est pas la dimension commerciale — c'est ce qu'ils provoquent. Une cliente qui sait qu'elle a un créneau réservé chaque mois ne se demande plus si elle « mérite » de venir. Elle vient. Et entre deux séances, elle s'autorise plus facilement à écouter son corps, parce qu'elle sait qu'elle aura bientôt un espace pour le déposer.",
+        text: "Ce que j'aime dans les abonnements, ce n'est pas la dimension commerciale — c'est ce qu'ils provoquent. Une cliente qui sait qu'elle a son créneau prévu chaque mois ne se demande plus quand elle prendra le temps de venir. Elle vient. Et entre deux séances, elle s'autorise plus facilement à écouter son corps, parce qu'elle sait qu'elle aura bientôt un espace pour le déposer.",
       },
       {
         type: "quote",
         text: "Avant, je venais quand je n'en pouvais plus. Maintenant, je viens avant d'en arriver là. Ça change tout.",
-        author: "Une cliente, après six mois de rythme mensuel",
+        author: "Une cliente, après quatre mois de rythme mensuel",
       },
       {
         type: "heading",
@@ -92,10 +92,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "S'engager sur trois ou six mois peut sembler beaucoup. Mais regardez autrement : c'est trois ou six rendez-vous posés dans votre agenda, rien que pour vous. Trois ou six moments où personne ne vous demandera rien. Trois ou six respirations, étalées dans le temps, qui finissent par dessiner une autre façon d'habiter son corps.",
+        text: "S'engager sur trois ou six mois peut sembler beaucoup. Mais regardez autrement : c'est trois ou six rendez-vous posés dans votre agenda, rien que pour vous. Trois ou six moments où vous n'aurez rien à faire, rien à réussir ou à gérer — seulement ressentir.",
       },
       {
         type: "paragraph",
+        emphasis: "bold",
         text: "La régularité, ce n'est pas une contrainte. C'est un cadeau qu'on se fait à l'avance, en sachant qu'on en aura besoin.",
       },
     ],
