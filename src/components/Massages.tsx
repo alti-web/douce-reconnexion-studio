@@ -18,18 +18,18 @@ const massages = [
     link: "/massages#massages-visage",
   },
   {
-    title: "Massages Duo",
-    hook: "Partagez un moment de relaxation à deux, entre amies ou en couple.",
-    duration: "60 / 75 / 90 min",
-    price: "À partir de 65 € / pers",
-    link: "/massages#massages-duo",
-  },
-  {
     title: "Corps & Visage",
     hook: "Un voyage sensoriel complet pour vivre une véritable expérience bien-être.",
     duration: "1h30 à 2h",
     price: "À partir de 85 €",
     link: "/massages#massages-corps-visage",
+  },
+  {
+    title: "Massages Duo",
+    hook: "Partagez un moment de relaxation à deux, entre amies ou en couple.",
+    duration: "60 / 75 / 90 min",
+    price: "À partir de 65 € / pers",
+    link: "/massages#massages-duo",
   },
 ];
 
