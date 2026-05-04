@@ -54,9 +54,9 @@ export const blogPosts: BlogPost[] = [
         caption: "Ce que j'observe entre une séance ponctuelle et un rythme mensuel",
         headers: ["Aspect", "Séance ponctuelle", "Rythme mensuel"],
         rows: [
-          ["Temps de relâchement", "Long, parfois difficile", "Quasi immédiat"],
-          ["Tensions", "Soulagées sur le moment", "Empêchées de s'installer"],
-          ["Sommeil", "Améliore une nuit", "S'installe dans la durée"],
+          ["Temps de relâchement", "Long, parfois difficile", "Facilité et rapide"],
+          ["Tensions", "Installées en profondeur", "Plus superficielles"],
+          ["Sommeil", "Améliore une nuit", "Meilleure qualité sur la durée"],
           ["Conscience corporelle", "Découverte", "Affinée, plus précise"],
           ["Rapport au soin", "Exception", "Engagement envers soi"],
         ],
