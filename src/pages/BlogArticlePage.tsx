@@ -84,7 +84,14 @@ const BlogArticlePage = () => {
           >
             {post.content.map((block, i) => {
               if (block.type === "paragraph") {
-                return <p key={i}>{block.text}</p>;
+                return (
+                  <p
+                    key={i}
+                    className={block.emphasis === "bold" ? "font-semibold text-foreground" : undefined}
+                  >
+                    {block.text}
+                  </p>
+                );
               }
               if (block.type === "heading") {
                 return (
