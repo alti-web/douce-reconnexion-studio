@@ -47,7 +47,31 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "À la première séance, beaucoup de femmes arrivent souvent avec une accumulation de pleins de choses : tensions installées depuis des semaines voire des mois, un mental actif en permanence, une respiration courte. Le corps a besoin de temps afin qu'il comprenne qu'il n'a plus besoin d'être en alerte permanente et qu'il peut basculer en mode « pause ». Au fil des séances mensuelles, quelque chose se modifie. La cliente s'allonge et là, le corps sait : il se souvient de ces petits détails qui lui permettent de basculer dans la relaxation — ambiance olfactive, lieu apaisant, chaleur de la table de massage. Quant au lâcher-prise, il arrive plus facilement, plus rapidement, voire plus profondément.",
+        text: "Lors de la première séance, beaucoup de femmes arrivent avec une accumulation, un trop-plein.",
+      },
+      {
+        type: "paragraph",
+        text: "Des tensions installées depuis des semaines, parfois des mois, un mental très actif, une respiration devenue courte presque sans s'en rendre compte.",
+      },
+      {
+        type: "paragraph",
+        text: "Le corps, habitué à rester en vigilance, a besoin de temps pour comprendre qu'il peut relâcher et sortir de cet état d'alerte permanent.",
+      },
+      {
+        type: "paragraph",
+        text: "Puis, au fil des séances mensuelles, quelque chose change.",
+      },
+      {
+        type: "paragraph",
+        text: "La cliente s'allonge… et peu à peu, le corps reconnaît. La chaleur de la table, la douceur du toucher, l'ambiance apaisante… autant de repères qui l'invitent à se déposer.",
+      },
+      {
+        type: "paragraph",
+        text: "Le lâcher-prise devient alors plus naturel. Plus rapide. Plus profond.",
+      },
+      {
+        type: "paragraph",
+        text: "Comme un retour à un état que le corps n'avait pas oublié, mais simplement mis de côté.",
       },
       {
         type: "table",
