@@ -55,7 +55,7 @@ const Hero = () => {
             href="#massages"
             className="hidden lg:flex bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium shadow-soft hover:shadow-hover transition-all duration-200 hover:-translate-y-0.5 active:scale-95"
           >
-            Trouver mon massage
+            Découvrir les massages
           </a>
           <a
             href="https://www.fresha.com/fr/book-now/fondamental-massage-re4dn2mw/services?lid=2753315&eid=4859480&share=true&pId=2663592"
@@ -65,12 +65,12 @@ const Hero = () => {
           >
             Je réserve mon moment détente
           </a>
-          {/* Mobile & tablet only - Trouver mon massage */}
+          {/* Mobile & tablet only - Découvrir les massages */}
           <a
             href="/massages"
             className="lg:hidden bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium shadow-soft hover:shadow-hover transition-all duration-200 active:scale-95"
           >
-            Trouver mon massage
+            Découvrir les massages
           </a>
           {/* Quiz button - mobile & tablet only */}
           <button
@@ -80,7 +80,7 @@ const Hero = () => {
             }}
             className="lg:hidden border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-full text-base font-medium hover:bg-primary-foreground/10 transition-all duration-200"
           >
-            Quel massage pour moi ?
+            Quel massage est fait pour moi ?
           </button>
         </motion.div>
       </div>
