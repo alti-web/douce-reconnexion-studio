@@ -131,7 +131,7 @@ const Quiz = () => {
         className="fixed bottom-6 left-6 z-40 hidden lg:flex items-center gap-2 bg-accent text-foreground px-5 py-3 rounded-full text-sm font-medium shadow-soft hover:shadow-hover transition-shadow duration-300 border border-border"
       >
         <HelpCircle className="w-4 h-4 text-primary" />
-        Quel massage pour moi ?
+        Quel massage est fait pour moi ?
       </motion.button>
 
       {/* Modal overlay */}
