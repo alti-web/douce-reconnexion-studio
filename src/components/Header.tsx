@@ -80,7 +80,9 @@ const Header = () => {
             renderLink(link, "text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200")
           )}
           <a
-            href="tel:0666428919"
+            href="https://www.fresha.com/fr/book-now/fondamental-massage-re4dn2mw/services?lid=2753315&eid=4859480&share=true&pId=2663592"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-medium shadow-soft hover:shadow-hover transition-all duration-200 hover:-translate-y-0.5 active:scale-95"
           >
             <Phone className="w-3.5 h-3.5" />
@@ -112,7 +114,10 @@ const Header = () => {
                 renderLink(link, "text-base text-foreground py-2")
               )}
               <a
-                href="tel:0666428919"
+                href="https://www.fresha.com/fr/book-now/fondamental-massage-re4dn2mw/services?lid=2753315&eid=4859480&share=true&pId=2663592"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
                 className="flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full text-sm font-medium mt-2"
               >
                 <Phone className="w-4 h-4" />
