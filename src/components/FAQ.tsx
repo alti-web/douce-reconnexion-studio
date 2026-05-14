@@ -32,6 +32,11 @@ const faqs = [
       "Oui, ou prévoir de quoi se démaquiller sur place. Il y a un petit point d'eau et un miroir dans les toilettes si besoin. Dans la pièce de massage, un miroir et une petite poubelle sont également à votre disposition.",
   },
   {
+    question: "Comment se passe le paiement d'un abonnement (rituel bien-être) ?",
+    answer:
+      "Le paiement est mensualisé, sans frais : vous ne réglez pas la totalité à la souscription. Lors de la réservation en ligne, vous renseignez vos coordonnées bancaires sur le site de réservation, puis vous êtes prélevée automatiquement chaque mois, à la même date, pendant 3 ou 6 mois selon la formule choisie — comme un paiement en plusieurs fois.",
+  },
+  {
     question: "À quelle fréquence est-il recommandé de recevoir un massage ?",
     answer:
       "Idéalement, une à deux fois par mois, que ce soit pour le corps ou le visage. C'est dans cette logique que j'ai créé le rituel bien-être, qui propose un massage d'1h par mois sur 3 ou 6 mois, ainsi que des cures pour le visage. L'objectif est d'inscrire les bienfaits dans la durée tout en évitant que les tensions ne s'accumulent.\n\nAu-delà de ça, chaque personne a des besoins différents, et le bon rythme reste toujours très personnel.\n\nMon conseil : si le massage ne peut pas s'intégrer dans une routine régulière, notamment pour des raisons de budget, il peut être intéressant de privilégier un massage plus ponctuel, mais un peu plus long (1h15 voire 1h30).\n\nQuand le quotidien est chargé, le corps met parfois du temps à lâcher. Ces quelques minutes supplémentaires permettent de lui laisser le temps de ralentir, de s'autoriser à se détendre, et d'accéder plus facilement à un véritable lâcher-prise.\n\nParfois, un simple quart d'heure en plus suffit à faire toute la différence.",
