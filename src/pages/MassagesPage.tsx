@@ -75,6 +75,9 @@ const MassagesPage = () => {
               <p className="text-muted-foreground text-xs leading-relaxed mb-3">
                 Engagez-vous sur un rythme régulier d'un massage par mois et bénéficiez d'un tarif préférentiel.
               </p>
+              <p className="text-xs leading-relaxed mb-3 bg-primary/10 text-foreground rounded-lg px-3 py-2 border border-primary/20">
+                <span className="font-medium">Paiement mensualisé sans frais :</span> aucun règlement total à la souscription. Vous renseignez vos coordonnées bancaires sur le site de réservation en ligne, puis vous êtes prélevée automatiquement chaque mois, à la même date, pendant 3 ou 6 mois selon la formule choisie.
+              </p>
               <div className="grid sm:grid-cols-2 gap-3">
                 <div className="bg-accent/40 rounded-xl p-4 text-sm">
                   <p className="font-medium">Abonnement 3 mois</p>
