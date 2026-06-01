@@ -97,6 +97,49 @@ const MassagesPage = () => {
               </div>
             </div>
           </motion.div>
+
+          {/* Drainage Lymphatique */}
+          <motion.div {...fadeIn} className="bg-card/60 backdrop-blur-sm rounded-[2rem] border border-border p-8 md:p-10 mb-8">
+            <h3 className="font-display text-2xl tracking-tight mb-2">Drainage Lymphatique</h3>
+            <p className="text-primary font-medium text-sm mb-4 italic">
+              Stimulez votre circulation lymphatique pour une sensation de légèreté et de bien-être.
+            </p>
+            <div className="space-y-3 text-muted-foreground leading-relaxed mb-6">
+              <p>
+                Ce massage doux et rythmé accompagne la circulation de la lymphe pour favoriser l'élimination des toxines et réduire la sensation de jambes lourdes.
+              </p>
+              <p>
+                Idéal pour retrouver un sentiment de légèreté, décongestionner les tissus et stimuler les défenses naturelles de l'organisme.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-4 mb-6">
+              <div className="flex items-center gap-2 bg-accent/60 px-4 py-2 rounded-xl text-sm">
+                <Clock className="w-4 h-4 text-primary" />
+                60 min
+              </div>
+              <div className="font-medium text-foreground bg-accent/60 px-4 py-2 rounded-xl text-sm">
+                <span className="line-through text-muted-foreground mr-2">65 €</span>
+                <span className="text-primary">55,25 €</span>
+              </div>
+            </div>
+
+            <div className="bg-primary/10 text-foreground rounded-lg px-4 py-3 border border-primary/20 mb-6">
+              <p className="text-sm font-medium">🎉 Offre de lancement — Juin uniquement</p>
+              <p className="text-xs text-muted-foreground mt-1">
+                Profitez de <span className="font-medium text-primary">-15 %</span> sur toutes les séances de drainage lymphatique pendant tout le mois de juin.
+              </p>
+            </div>
+
+            <a
+              href="https://www.fresha.com/fr/book-now/fondamental-massage-re4dn2mw/services?lid=2753315&eid=4859480&share=true&pId=2663592"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full text-sm font-medium shadow-soft hover:shadow-hover transition-all duration-200 hover:-translate-y-0.5 active:scale-95"
+            >
+              Réserver cette prestation
+            </a>
+          </motion.div>
         </div>
       </section>
 
