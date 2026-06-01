@@ -39,30 +39,24 @@ const MassagesPage = () => {
           <motion.div {...fadeIn} className="bg-card/60 backdrop-blur-sm rounded-[2rem] border border-border p-8 md:p-10 mb-8">
             <h3 className="font-display text-2xl tracking-tight mb-2">"Je lâche-prise"</h3>
             <p className="text-primary font-medium text-sm mb-4 italic">
-              Le drainage lymphatique vous aide à retrouver légèreté, confort et profonde détente dès la première séance.
+              Vivez bien plus qu'un simple moment de détente, une véritable reconnexion à soi.
             </p>
             <div className="space-y-3 text-muted-foreground leading-relaxed mb-6">
               <p>
-                Le drainage lymphatique est un massage lent et doux qui accompagne les processus naturels d'élimination, améliore la circulation et favorise une sensation de légèreté et détente dès la première séance.
+                Ce massage vous transporte vers l'apaisement et le lâcher-prise par des manœuvres enveloppantes, une variation de rythme et d'intensité.
               </p>
               <p>
-                Particulièrement apprécié lors des périodes de fortes chaleurs, de fatigue, de stress ou de variations hormonales, il aide à soulager les sensations de jambes lourdes, de gonflements et de rétention d'eau, pour retrouver un corps plus léger et plus fluide.
-              </p>
-              <p>
-                Au-delà de ses bienfaits circulatoires, il procure une profonde détente et une agréable sensation de bien-être.
+                Peu à peu, vos tensions s'apaisent, vos épaules se relâchent, le stress diminue, votre respiration devient plus ample, le mental se met sur pause, vous vous abandonnez totalement à l'instant présent et au calme intérieur.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-4 mb-6">
               <div className="flex items-center gap-2 bg-accent/60 px-4 py-2 rounded-xl text-sm">
                 <Clock className="w-4 h-4 text-primary" />
-                1h - 1h15
+                60 / 75 / 90 min
               </div>
               <div className="font-medium text-foreground bg-accent/60 px-4 py-2 rounded-xl text-sm">
-                À partir de 65 €
-              </div>
-              <div className="text-muted-foreground bg-accent/60 px-4 py-2 rounded-xl text-sm">
-                1 zone : haut ou bas du corps
+                À partir de 60 €
               </div>
             </div>
 
