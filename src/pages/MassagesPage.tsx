@@ -56,10 +56,13 @@ const MassagesPage = () => {
             <div className="flex flex-wrap gap-4 mb-6">
               <div className="flex items-center gap-2 bg-accent/60 px-4 py-2 rounded-xl text-sm">
                 <Clock className="w-4 h-4 text-primary" />
-                60 / 75 / 90 min
+                1h - 1h15
               </div>
               <div className="font-medium text-foreground bg-accent/60 px-4 py-2 rounded-xl text-sm">
-                À partir de 60 €
+                À partir de 65 €
+              </div>
+              <div className="text-muted-foreground bg-accent/60 px-4 py-2 rounded-xl text-sm">
+                1 zone : haut ou bas du corps
               </div>
             </div>
 
