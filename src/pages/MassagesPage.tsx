@@ -78,22 +78,12 @@ const MassagesPage = () => {
               <p className="text-xs leading-relaxed mb-3 bg-primary/10 text-foreground rounded-lg px-3 py-2 border border-primary/20">
                 <span className="font-medium">Paiement mensualisé sans frais :</span> aucun règlement total à la souscription. Vous renseignez vos coordonnées bancaires sur le site de réservation en ligne, puis vous êtes prélevée automatiquement chaque mois, à la même date, pendant 3 ou 6 mois selon la formule choisie.
               </p>
-              <div className="grid sm:grid-cols-2 gap-3">
-                <div className="bg-accent/40 rounded-xl p-4 text-sm">
-                  <p className="font-medium">Abonnement 3 mois</p>
-                  <p className="text-muted-foreground">1 massage d'1h/mois — <span className="text-primary font-medium">55 €/séance</span></p>
-                </div>
-                <div className="bg-accent/40 rounded-xl p-4 text-sm">
-                  <p className="font-medium">Abonnement 6 mois</p>
-                  <p className="text-muted-foreground">1 massage d'1h/mois — <span className="text-primary font-medium">50 €/séance</span></p>
-                </div>
-                <div className="bg-accent/40 rounded-xl p-4 text-sm sm:col-span-2">
-                  <p className="font-medium">Abonnement Liberté <span className="text-xs font-normal text-muted-foreground">(3 ou 6 mois)</span></p>
-                  <p className="text-muted-foreground">
-                    Chaque mois, choisissez entre <span className="text-foreground font-medium">le massage corps "Je lâche-prise" (1h)</span> ou <span className="text-foreground font-medium">le massage Shinzu the Face (1h)</span>, selon vos envies et besoins du moment.
-                  </p>
-                  <p className="text-muted-foreground mt-1">Tarifs identiques : <span className="text-primary font-medium">55 €/séance</span> (3 mois) ou <span className="text-primary font-medium">50 €/séance</span> (6 mois)</p>
-                </div>
+              <div className="bg-accent/40 rounded-xl p-4 text-sm">
+                <p className="font-medium">Mon rituel bien-être sur mesure <span className="text-xs font-normal text-muted-foreground">(3 ou 6 mois)</span></p>
+                <p className="text-muted-foreground">
+                  Chaque mois, choisissez entre <span className="text-foreground font-medium">le massage corps "Je lâche-prise" (1h)</span> ou <span className="text-foreground font-medium">le massage Shinzu the Face (1h)</span>, selon vos envies et besoins du moment.
+                </p>
+                <p className="text-muted-foreground mt-1">Tarifs identiques : <span className="text-primary font-medium">55 €/séance</span> (3 mois) ou <span className="text-primary font-medium">50 €/séance</span> (6 mois)</p>
               </div>
             </div>
           </motion.div>
