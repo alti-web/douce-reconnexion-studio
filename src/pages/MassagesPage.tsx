@@ -92,14 +92,17 @@ const MassagesPage = () => {
           <motion.div {...fadeIn} className="bg-card/60 backdrop-blur-sm rounded-[2rem] border border-border p-8 md:p-10 mb-8">
             <h3 className="font-display text-2xl tracking-tight mb-2">Drainage Lymphatique</h3>
             <p className="text-primary font-medium text-sm mb-4 italic">
-              Stimulez votre circulation lymphatique pour une sensation de légèreté et de bien-être.
+              Relancer votre circulation lymphatique pour une sensation de légèreté et de bien-être retrouvée.
             </p>
             <div className="space-y-3 text-muted-foreground leading-relaxed mb-6">
               <p>
-                Ce massage doux et rythmé accompagne la circulation de la lymphe pour favoriser l'élimination des toxines et réduire la sensation de jambes lourdes.
+                Ce massage lent et doux accompagne stimule la circulation lymphatique et favorise sensation de légèreté dès la première séance.
               </p>
               <p>
-                Idéal pour retrouver un sentiment de légèreté, décongestionner les tissus et stimuler les défenses naturelles de l'organisme.
+                Particulièrement apprécié lors des périodes de fortes chaleurs, de fatigue, de stress ou de variations hormonales, il aide à soulager les sensations de jambes lourdes, de gonflements dûe à la rétention d'eau.
+              </p>
+              <p>
+                Au-delà de ses bienfaits circulatoires, il procure une profonde détente et une agréable sensation de bien-être.
               </p>
             </div>
 
