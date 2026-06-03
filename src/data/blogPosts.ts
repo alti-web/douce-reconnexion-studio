@@ -21,6 +21,231 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "kobido-massage-facial-japonais-deroule-bienfaits",
+    title: "Kobido / massage facial japonais : déroulé, bienfaits — ce qui en fait un massage pas comme les autres",
+    excerpt:
+      "Massage facial japonais profondément relaxant : déroulé, bienfaits réels et différences avec un soin esthétique. Le récit sincère d'une praticienne à Saint-Privat.",
+    category: "Bien-être",
+    date: "2025-05-05",
+    readingMinutes: 7,
+    content: [
+      {
+        type: "paragraph",
+        text: "Quand une cliente franchit pour la première fois la porte de Fondamental Massage à Saint-Privat pour découvrir le Kobido, elle arrive presque toujours avec la même image en tête : celle d'un massage facial tonique, anti-âge, sans doute un peu inconfortable, qu'il faudrait endurer pour en récolter les bienfaits.",
+      },
+      {
+        type: "paragraph",
+        text: "Et puis je lui propose de s'allonger. Soixante minutes plus tard, neuf fois sur dix, elle s'est endormie.",
+      },
+      {
+        type: "paragraph",
+        text: "C'est précisément de cette dissociation entre l'idée qu'on se fait du Kobido et l'expérience réelle qu'il procure dont je voudrais vous parler aujourd'hui. Parce qu'à vouloir trop souvent réduire ce massage à son seul effet liftant, on passe à côté de ce qui, à mes yeux de praticienne, en fait toute la richesse.",
+      },
+      {
+        type: "heading",
+        text: "Qu'est-ce que le Kobido, ce massage facial japonais ?",
+      },
+      {
+        type: "paragraph",
+        text: "Le Kobido — qui signifie littéralement « ancienne voie de la beauté » — est une technique de massage du visage née au Japon il y a près de cinq siècles. À l'origine, il était réservé à l'impératrice et aux femmes de la cour. Aujourd'hui, il s'est ouvert plus largement, mais il reste une discipline manuelle exigeante.",
+      },
+      {
+        type: "paragraph",
+        emphasis: "bold",
+        text: "Une gestuelle complète et précise",
+      },
+      {
+        type: "paragraph",
+        text: "Ce qui distingue le Kobido de la plupart des autres massages du visage, c'est la richesse de sa gestuelle. Plus de mille mouvements composent le répertoire traditionnel : pincements, pétrissages, lissages, percussions, drainages, étirements. Bien évidemment, tous ne sont pas appris lors d'une ou deux formations.",
+      },
+      {
+        type: "paragraph",
+        emphasis: "bold",
+        text: "Une approche manuelle, sans appareil ni produit « actif »",
+      },
+      {
+        type: "paragraph",
+        text: "Pas d'appareil de radiofréquence, pas d'aiguille, pas de courant. Juste mes mains, une huile végétale adaptée, et une concentration entière pendant toute la durée du soin. C'est ce qui rend le Kobido profondément humain dans son approche : on est dans le toucher, dans la présence, dans la lenteur des gestes — même quand ils sont rapides.",
+      },
+      {
+        type: "heading",
+        text: "Le déroulé d'une séance de Kobido à Saint-Privat",
+      },
+      {
+        type: "paragraph",
+        text: "Une séance dure une heure pleine. Voici comment elle s'organise concrètement, étape par étape.",
+      },
+      {
+        type: "paragraph",
+        emphasis: "bold",
+        text: "Merci de venir démaquillée au rendez-vous, ou de prévoir de quoi le faire sur place.",
+      },
+      {
+        type: "paragraph",
+        emphasis: "bold",
+        text: "L'accueil et le temps d'échange",
+      },
+      {
+        type: "paragraph",
+        text: "Avant chaque première séance, je prends un moment pour discuter avec ma cliente : son état du jour, ses tensions, ce qu'elle souhaite, ce qu'elle redoute aussi parfois. Ce temps d'écoute n'est pas un préambule poli, c'est ce qui me permet d'ajuster ensuite le soin à ce qu'elle vit, ici, maintenant.",
+      },
+      {
+        type: "paragraph",
+        emphasis: "bold",
+        text: "Le massage en lui-même",
+      },
+      {
+        type: "paragraph",
+        text: "Une serviette chaude est préalablement appliquée sur le visage pour entrer en douceur dans le massage et procurer un premier apaisement. Ensuite, place au cœur de la séance. Pendant 45 à 50 minutes, je travaille le visage et le cou, en alternant gestes toniques, rapides, profonds et mouvements enveloppants. Et c'est ici que se joue ce que je disais en introduction : malgré la profondeur et le rythme parfois soutenu des manœuvres, l'effet sur le corps est extrêmement relaxant.",
+      },
+      {
+        type: "table",
+        caption: "Les étapes d'une séance de Kobido",
+        headers: ["Étape", "Durée", "Ce qui se passe"],
+        rows: [
+          ["Accueil et échange", "5 à 10 min", "Discussion, installation, mise en confiance"],
+          ["Massage Kobido", "45 à 50 min", "Travail manuel du visage et du cou"],
+          [
+            "Acupression et drainage",
+            "10 à 15 min",
+            "Stimulation de points d'acupression sur les méridiens du visage, puis phase drainante en manœuvres manuelles et au roll-on",
+          ],
+          ["Retour au calme", "5 min", "Réveil en douceur, conseils personnalisés si besoin"],
+        ],
+      },
+      {
+        type: "paragraph",
+        emphasis: "bold",
+        text: "Le retour au calme, sans précipitation",
+      },
+      {
+        type: "paragraph",
+        text: "J'évite toujours de réveiller trop vite. Les clientes ont besoin de revenir doucement à elles-mêmes, surtout quand elles se sont laissées glisser dans le sommeil — ce qui, je le redis, arrive à neuf clientes sur dix.",
+      },
+      {
+        type: "heading",
+        text: "Les bienfaits réels du Kobido : ce que mes clientes ressentent",
+      },
+      {
+        type: "paragraph",
+        text: "Je préfère parler de ce que je constate plutôt que de promettre. Voici ce que mes clientes me rapportent, séance après séance.",
+      },
+      {
+        type: "paragraph",
+        emphasis: "bold",
+        text: "Une détente que personne n'anticipe",
+      },
+      {
+        type: "paragraph",
+        text: "C'est sans doute le bienfait le plus fréquemment cité, et le plus inattendu. Les gestes sont toniques, parfois profonds, et pourtant l'effet global est un lâcher-prise rare. Cette dissociation entre la nature des mouvements et la sensation qu'ils produisent surprend toutes mes premières clientes. C'est aussi pour cette raison que beaucoup d'entre elles s'endorment.",
+      },
+      {
+        type: "paragraph",
+        emphasis: "bold",
+        text: "Des traits adoucis dès la première séance",
+      },
+      {
+        type: "paragraph",
+        text: "Au bout d'une heure de soin, les traits sont adoucis et le visage paraît plus reposé, dès la première fois. C'est observable, et mes clientes le voient elles-mêmes dans le miroir avant de partir. Ce n'est pas un effet liftant au sens médical du terme — il faudrait une tout autre rigueur de fréquence pour cela, j'y reviens plus bas — mais c'est un visage visiblement détendu, repulpé, qui respire mieux.",
+      },
+      {
+        type: "paragraph",
+        emphasis: "bold",
+        text: "Les pincements, ce moment que les clientes adorent",
+      },
+      {
+        type: "paragraph",
+        text: "C'est presque toujours la même surprise : les pincements, qu'on imagine désagréables, sont souvent le moment préféré de la séance. Les retours sont assez constants : elles ont senti leur peau se détendre, s'assouplir, leur visage se décrisper. Sur des visages qui portent beaucoup de tensions — mâchoires serrées, front plissé, contractures autour des yeux — ce type de geste fait un travail que rien d'autre ne fait à ma connaissance.",
+      },
+      {
+        type: "paragraph",
+        text: "Voici les bienfaits qui reviennent le plus souvent dans les retours de mes clientes : une détente profonde, parfois jusqu'à l'endormissement ; un visage visiblement plus reposé en sortie de séance ; des traits adoucis et un teint plus uniforme ; une peau qui se détend et s'assouplit, surtout dans les zones de tension ; une sensation de décrispation du visage que mes clientes décrivent souvent spontanément ; un apaisement mental et émotionnel durable ; et souvent, une nuit de sommeil particulièrement profonde derrière.",
+      },
+      {
+        type: "heading",
+        text: "Le massage facial japonais inspiré Kobido, meilleur qu'un soin esthétique ?",
+      },
+      {
+        type: "paragraph",
+        emphasis: "bold",
+        text: "Une philosophie différente",
+      },
+      {
+        type: "paragraph",
+        text: "Le soin esthétique classique vise d'abord la peau et son apparence. Le Kobido, lui, travaille à la rencontre du visage et agit simultanément sur la peau, les muscles et la circulation énergétique. Ce n'est ni mieux ni moins bien : c'est différent. Et selon ce qu'on cherche, l'un ou l'autre — ou les deux — peuvent avoir tout leur sens.",
+      },
+      {
+        type: "table",
+        caption: "Soin esthétique classique vs Massage Kobido",
+        headers: ["Soin esthétique classique", "Massage Kobido"],
+        rows: [
+          [
+            "Action principalement sur la peau (cosmétiques, machines)",
+            "Action sur les tissus, les muscles peauciers et le système nerveux",
+          ],
+          [
+            "Recours fréquent à des appareils (LED, radiofréquence, ultrasons)",
+            "Travail uniquement manuel, sans appareil",
+          ],
+          [
+            "Objectif souvent esthétique : éclat, hydratation, anti-âge",
+            "Objectif global : détente profonde, vitalité, équilibre du visage",
+          ],
+          [
+            "Effet rapide en surface, mais souvent superficiel sur les tensions",
+            "Effet plus discret en surface, mais plus profond sur les tensions",
+          ],
+          [
+            "Régularité variable selon la prestation",
+            "Régularité essentielle pour des résultats véritablement durables",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        emphasis: "bold",
+        text: "Pourquoi je ne vends pas le Kobido comme un lifting",
+      },
+      {
+        type: "paragraph",
+        text: "Il est important pour moi de le dire clairement : je ne présente pas le Kobido comme un lifting, même si certains le font, et même si l'argument est commercialement très porteur. La raison est simple : pour obtenir des résultats comparables à un protocole anti-âge sérieux, il faudrait une fréquence très rapprochée — une à deux séances par semaine le premier mois, puis une à deux par mois en entretien. Honnêtement, je n'ai jamais eu de cliente prête à un tel investissement, ni en temps ni en budget.",
+      },
+      {
+        type: "paragraph",
+        text: "Promettre un effet liftant sans cette régularité, ce serait mentir. Je préfère vous proposer un soin sincèrement décrit, qui tient ses promesses, plutôt qu'un argument marketing qui finirait par décevoir.",
+      },
+      {
+        type: "heading",
+        text: "Pour qui le Kobido est-il particulièrement indiqué ?",
+      },
+      {
+        type: "paragraph",
+        text: "Le Kobido convient particulièrement à toute femme qui cherche un vrai temps de relâchement profond, sans superficialité ; aux visages qui portent beaucoup de tensions (mâchoires serrées, front contracté, contractures autour des yeux) ; aux personnes traversant une période de stress chronique ou de fatigue accumulée ; à celles qui veulent prendre soin de leur visage par une approche naturelle, non invasive, sans produit transformateur ; et aux femmes sensibles à la dimension sensorielle et au contact humain dans un soin.",
+      },
+      {
+        type: "paragraph",
+        text: "En revanche, je préfère reporter ou orienter autrement en cas de poussée cutanée active (acné inflammatoire, eczéma en crise, rosacée en poussée) ; de chirurgie esthétique récente (2 à 3 mois, selon les recommandations du chirurgien) ou de médecine esthétique comme des injections (entre 2 et 3 semaines) ; de plaie, lésion ou infection sur la zone à masser ; de pathologie médicale spécifique nécessitant un avis préalable de votre médecin ; ou de fracture des cervicales.",
+      },
+      {
+        type: "heading",
+        text: "Quelques mots avant de réserver",
+      },
+      {
+        type: "paragraph",
+        text: "Si vous êtes arrivée jusqu'ici dans la lecture, c'est sans doute que ce massage vous intrigue. Je préfère que vous veniez avec une attente juste : celle d'un vrai moment de relâchement, d'un visage adouci et reposé en sortie de séance, plutôt qu'avec la promesse trompeuse d'un rajeunissement spectaculaire. Ce qui se passe sous mes mains est plus subtil que cela — et à mon sens, plus précieux.",
+      },
+      {
+        type: "paragraph",
+        text: "L'institut Fondamental Massage est situé à Saint-Privat, à cinq minutes d'Aubenas, dans mon espace de massages exclusivement féminin pensé pour le calme et la confidentialité. Si vous hésitez encore, prenez le temps de m'écrire avant : un échange préalable nous permet de vérifier que le Kobido est bien ce qui vous correspond, à ce moment de votre vie.",
+      },
+      {
+        type: "quote",
+        text: "Ce qui se passe sous mes mains est plus subtil qu'un lifting — et à mon sens, plus précieux.",
+        author: "Élodie Valdès, praticienne en massages au service du bien-être de la femme",
+      },
+    ],
+  },
+  {
     slug: "bienfaits-regularite-massage",
     title: "Pourquoi la régularité change tout en massage",
     excerpt:
