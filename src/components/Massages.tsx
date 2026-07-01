@@ -13,8 +13,9 @@ const massages = [
   {
     title: "Drainage lymphatique",
     hook: "Jambes lourdes, sensation de gonflement, rétention d'eau… accentués par la chaleur. Ce massage vous aide à retrouver légèreté, confort et profonde détente.",
-    duration: "60 min",
-    price: "55,25 €",
+    duration: "1h / 1h15",
+    price: "65 €",
+
     link: "/massages#massages-corps",
   },
   {
