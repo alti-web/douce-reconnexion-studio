@@ -109,20 +109,13 @@ const MassagesPage = () => {
             <div className="flex flex-wrap gap-4 mb-6">
               <div className="flex items-center gap-2 bg-accent/60 px-4 py-2 rounded-xl text-sm">
                 <Clock className="w-4 h-4 text-primary" />
-                60 min
+                1h / 1h15 (1 zone : haut ou bas du corps)
               </div>
               <div className="font-medium text-foreground bg-accent/60 px-4 py-2 rounded-xl text-sm">
-                <span className="line-through text-muted-foreground mr-2">65 €</span>
-                <span className="text-primary">55,25 €</span>
+                <span className="text-primary">65 €</span>
               </div>
             </div>
 
-            <div className="bg-primary/10 text-foreground rounded-lg px-4 py-3 border border-primary/20 mb-6">
-              <p className="text-sm font-medium">🎉 Offre de lancement — Juin uniquement</p>
-              <p className="text-xs text-muted-foreground mt-1">
-                Profitez de <span className="font-medium text-primary">-15 %</span> sur toutes les séances de drainage lymphatique pendant tout le mois de juin.
-              </p>
-            </div>
 
             <a
               href="https://www.fresha.com/fr/book-now/fondamental-massage-re4dn2mw/services?lid=2753315&eid=4859480&share=true&pId=2663592"
