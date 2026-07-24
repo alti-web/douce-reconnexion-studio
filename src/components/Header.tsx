@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, ExternalLink } from "lucide-react";
+import { Menu, X, ExternalLink } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
   { label: "Massages", href: "/massages" },
+  { label: "Carte cadeau", href: "/massages#carte-cadeau" },
   { label: "Déroulement", href: "/deroulement" },
   { label: "Blog", href: "/blog" },
   { label: "Témoignages", href: "/#temoignages" },
@@ -17,7 +18,6 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
-  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 100);
@@ -25,31 +25,32 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleNavClick = (href: string) => {
+  const handleHashLink = (href: string) => {
     setMenuOpen(false);
-    if (href.startsWith("/#")) {
-      const hash = href.replace("/", "");
-      if (isHome) {
-        const el = document.querySelector(hash);
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      } else {
-        // Navigate to home, then scroll after page loads
-        window.location.href = href;
-      }
+    const hashIndex = href.indexOf("#");
+    if (hashIndex === -1) return;
+    const path = href.slice(0, hashIndex) || "/";
+    const hash = href.slice(hashIndex + 1);
+    if (location.pathname === path) {
+      const el = document.getElementById(hash);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.location.href = href;
     }
   };
 
   const renderLink = (link: { label: string; href: string }, className: string) => {
-    if (link.href.startsWith("/") && !link.href.startsWith("/#")) {
+    if (link.href.includes("#")) {
       return (
-        <Link key={link.href} to={link.href} className={className} onClick={() => setMenuOpen(false)}>
-          {link.label}
-        </Link>
-      );
-    }
-    if (link.href.startsWith("/#") && isHome) {
-      return (
-        <a key={link.href} href={link.href.replace("/", "")} className={className} onClick={() => handleNavClick(link.href)}>
+        <a
+          key={link.href}
+          href={link.href}
+          className={className}
+          onClick={(e) => {
+            e.preventDefault();
+            handleHashLink(link.href);
+          }}
+        >
           {link.label}
         </a>
       );
