@@ -460,7 +460,7 @@ const MassagesPage = () => {
       </section>
 
       {/* Cartes Cadeau */}
-      <section className="py-16 md:py-20 bg-primary/10">
+      <section id="carte-cadeau" className="py-16 md:py-20 bg-primary/10">
         <div className="container text-center max-w-xl">
           <motion.h2 {...fadeIn} className="font-display text-2xl md:text-3xl tracking-tight mb-4">
             Offrez un moment de détente
